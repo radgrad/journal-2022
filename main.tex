@@ -40,32 +40,29 @@
 }
 \orcid{0000-0002-9508-9225}
 
-\renewcommand{\shortauthors}{You et al.}
+\renewcommand{\shortauthors}{Johnson et al.}
 
 \newcommand{\AbstractCategory}[1]{%
   \par\addvspace{.5\baselineskip}% adjust to suit
   \noindent\textbf{#1}\quad\ignorespaces
 }
 
-%Structured abstracts are encouraged when possible. Please indicate the mixed methods design, including types of participants or data sources, analytic strategy, main results/findings, and major implications/significance.
-%
-% The abstract is a short summary of the work to be presented in the article.
 \begin{abstract}
 
-\AbstractCategory{Objectives} % This is the start of the structured abstract, which is encouraged (but not required) for all TOCE papers. State the problem under investigation, including main hypotheses.
-RadGrad is a curriculum initiative implemented via a web-based application that combines features of social networks, degree planners, and serious games. RadGrad redefines the traditional meanings of ``progress'' and ``success'' in the undergraduate computer science degree program. The objective of this research is gather qualitative and quantitative data from students regarding RadGrad in order to evaluate whether the system can impact on student engagement, diversity, and retention.
+\AbstractCategory{Objectives}
+RadGrad is a curriculum initiative implemented via a web-based application that combines features of social networks, degree planners, and serious games. RadGrad redefines the traditional meanings of ``progress'' and ``success'' in the undergraduate computer science degree program. The primary research question reported in this paper is: What is the impact of RadGrad on student engagement, diversity, and retention, and the opportunities and challenges that result from the use of the system?
 
-\AbstractCategory{Participants} % Describe subjects participants, specifying their pertinent characteristics for the study. Participants are described in greater detail in the body of the paper.
-We requested from 498 students during the Fall of 2021 and the Spring of 2022.
+\AbstractCategory{Participants}
+To gain insight into our research question, this paper reports on data we obtained from major stakeholder groups, including: 498 students, 11 Faculty, and 2 Advisors.
 
 \AbstractCategory{Study Methods}
-% Describe the study method, including‒research design (e.g., experiment, observational study)‒sample size‒materials used (e.g., instruments, apparatus)‒outcome measures‒data-gathering procedures, including a brief description of the source of any secondary data. If the study is a secondary data analysis, so indicate.
+We used a qualitative experimental research design, including data obtained through questionnaire responses from our major stakeholder group as well as data from system instrumentation.
 
 \AbstractCategory{Findings}
-% Report findings, including effect sizes and confidence intervals or statistical significance levels.
+We found strong evidence to support the hypothesis that RadGrad can have a positive impact on student engagement in Computer Science for students who are relatively new to the discipline. We found some evidence to support the hypothesis that RadGrad can have a positive impact on student diversity. We were unable to evaluate the impact of RadGrad on retention.
 
 \AbstractCategory{Conclusions}
-% State conclusions, beyond just results, and report the implications or applications.
+The data gathered in this study indicates that technologies like RadGrad provide a promising means to improve engagement, diversity, and (potentially) retention in Computer Science.  The data suggests that development and evaluation of RadGrad at other institutions and/or in other STEM disciplines would provide useful insight into the generality of the approach. It also indicates that faculty engagement with the technology would increase its effectiveness, but that obtaining faculty buy-in is challenging.
 
 \end{abstract}
 
@@ -92,140 +89,110 @@ We requested from 498 students during the Fall of 2021 and the Spring of 2022.
 \maketitle
 
 \section{Introduction}
-ACM TOCE strongly encourages authors to submit papers that adhere to the \hyperlink{https://apastyle.apa.org/jars/}{\color{blue}{American Psychological Association’s Journal Article Reporting Standards}}  (JARS).  Some papers that lie within the scope of ACM TOCE are not a good fit for these standards; we welcome such submissions. Whether or not your paper is a good fit for the standards, they can provide useful guidance to help make your paper more accessible to reviewers and the TOCE audience.
-Here, we provide a JARS template for \hyperlink{https://apastyle.apa.org/jars/mixed-table-1.pdf}{\color{blue}{mixed-method research designs}}.  See also the TOCE JARS templates for \hyperlink{https://apastyle.apa.org/jars/quantitative}{\color{blue}{quantitative}} and \hyperlink{https://apastyle.apa.org/jars/qualitative}{\color{blue}{qualitative}} research designs.
 
-Note that the ACM provides an article templates for \hyperlink{https://www.acm.org/binaries/content/assets/publications/taps/acm_submission_template.docx}{\color{blue}{Microsoft Word}} and \hyperlink{https://www.acm.org/binaries/content/assets/publications/consolidated-tex-template/acmart-master.zip}{\color{blue}{Latex}}. Please download it and reference as appropriate as you write your paper. They contain detailed advice and guidance on a range of specific formatting issues not covered in this template.
+\subsection{Research Problem}
+{\em\small Frame the problem or question and its context. Review, critique, and synthesize the applicable literature to identify key issues/debates/theoretical frameworks in the relevant literature to clarify barriers, knowledge gaps, or practical needs.}
 
-\textit{Guidance for Authors:} This section may convey barriers in the literature that suggest a need for both qualitative and quantitative data.
 
-\textit{Guidance for Reviewers:} Theory or conceptual framework use in mixed methods varies depending on the  specific mixed methods design or procedures used. Theory may be used inductively or deductively (or both) in mixed methods research
-
-\subsection{Description of Research Problem or Question}
-
-State the importance of the problem, including theoretical or practical implications. Frame the problem or question and its context. Review, critique, and synthesize the applicable literature to identify key issues/debates/ theoretical frameworks in the relevant literature to clarify barriers, knowledge gaps, or practical needs.
-
-\subsection{Study Objectives/Aims/Research Goals}
-\begin{itemize}
-\item State the purpose(s)/goal(s)/aim(s) of the study. Order these to reflect the type of mixed methods design used.
-\item State the target audience, if specific.
-\item Provide the rationale for fit of design used to investigate this purpose/goal (e.g., theory building, explanatory, developing understanding, social action, description, highlighting social practices).
-\item Describe the ways approaches to inquiry were combined, as it illuminates the objectives and mixed methods rationale (e.g., descriptive, interpretive, feminist, psychoanalytic, postpositivist, critical, postmodern, constructivist, or pragmatic approaches).
-\end{itemize}
-
-\textit{Guidance for Authors:} If relevant to objectives, explain the relation of the current analysis to prior articles/ publications.
-
-\textit{Guidance for Reviewers:} This subsection should describe the results to be obtained from using the mixed methods design type where “mixing” or integration occurs (e.g., the aim is to explain quantitative survey results with qualitative interviews in an explanatory sequential design). For instance, the goal of a qualitative phase could be the development of a conceptual model, the goal of a quantitative phase could be hypothesis testing based upon that model, and the goal of the mixed methods phase could be to generate integrated support for a theory based upon quantitative and qualitative evidence
+\subsection{Research Goals}
+{\em\small State the purpose(s)/goal(s)/aim(s) of the study. State the target audience, if specific. Provide the rationale for fit of design used to investigate this purpose/goal (e.g., theory building, explanatory, developing understanding, social action, description, highlighting social practices). Describe the approach to inquiry, if it illuminates the objectives and research rationale (e.g., descriptive, interpretive, feminist, psychoanalytic, postpositivist, critical, postmodern, constructivist, or pragmatic approaches).}
 
 \section{Method}
 
-See the \hyperlink{https://apastyle.apa.org/jars/quantitative}{\color{blue}{JARS-QUANT}} and \hyperlink{https://apastyle.apa.org/jars/qualitative}{\color{blue}{JARS-QUAL}} standards for guidance on this section.
-
 \subsection{Research Design Overview}
 
-\begin{itemize}
-\item Summarize the research design, including data-collection strategies, data-analytic strategies, and, if illuminating, approaches to inquiry (e.g., descriptive, interpretive, feminist, psychoanalytic, postpositivist, critical, postmodern, constructivist, or pragmatic approaches).
-\item Explain why mixed methods research is appropriate as a methodology given the paper’s goals.
-\item Identify the type of mixed methods design used and define it.
-\item Indicate the qualitative approach to inquiry and the quantitative design used within the mixed methods design type (e.g., ethnography, randomized experiment).
-\item If multiple approaches to inquiry were combined, describe how this was done and provide a rationale (e.g., descriptive, interpretive, feminist, psychoanalytic, postpositivist, critical, postmodern, constructivist, or pragmatic approaches), as it is illuminating for the mixed method in use.
-\item Provide a rationale or justification for the need to collect both qualitative and quantitative data and the added value of integrating the results (findings) from the two databases.
-\end{itemize}
+{\em\small  Summarize the research design, including data-collection strategies, data-analytic strategies, and, if illuminating, approaches to inquiry (e.g., descriptive, interpretive, feminist, psychoanalytic, postpositivist, critical, postmodern, constructivist, or pragmatic approaches). Provide the rationale for the design selected.}
 
-\textit{Guidance for Reviewers:}
-\begin{itemize}
-\item It may be helpful to provide a definition of the mixed-methods approach from a major reference in the field.
-\item Mixed methods research involves rigorous methods, both qualitative and quantitative. Refer to the See the JARS–Qual (qualitative) and JARS–Quant (quantitative) Standards for details of rigor.
-\item One of the most widely discussed topics in the mixed methods literature is research designs. There is not a generic mixed methods design but rather multiple types of designs. Basic, core designs include convergent design, explanatory sequential design, and exploratory sequential design. Although the names and types of designs may differ among mixed methods writers, a common understanding is that procedures for conducting a mixed methods study may differ from one project to another. Further, these basic procedures can be expanded by linking mixed methods to other designs (e.g., an intervention or experimental trial mixed methods study), to theories or standpoints (e.g., a feminist mixed methods study), or to other methodologies (e.g., a participatory action research mixed methods study)
-\end{itemize}
+\subsection{Study Participants}
+
+\subsubsection{Researcher Description}
+
+{\em\small Describe the researchers’ backgrounds in approaching the study, emphasizing their prior understandings of the phenomena under study (e.g., interviewers, analysts, or research team). Describe how prior understandings of the phenomena under study were managed and/or influenced the research (e.g., enhancing, limiting, or structuring data collection and analysis).}
+
+\subsubsection{Participants}
+
+{\em\small Provide the numbers of participants/documents/events analyzed. Describe the demographics/cultural information, perspectives of participants, or characteristics of data sources that might influence the data collected. Describe existing data sources, if relevant (e.g., newspapers, internet, archive). Provide data repository information for openly shared data, if applicable. Describe archival searches or process of locating data for analyses, if applicable. }
 
 
-\subsection{Participants or Other Data Sources}
+\subsubsection{Researcher–Participant Relationship}
 
-\begin{itemize}
-\item Provide the numbers of participants/documents/events analyzed.
-\item When data are collected from multiple sources, clearly identify the sources of qualitative and quantitative data (e.g., participants, text), their characteristics, and the relationship between the data sets, if there is one (e.g., an embedded design).
-\item State the data sources in the order of procedures used in the design type (e.g., qualitative sources first in an exploratory sequential design followed by quantitative sources), if a sequenced design is used in the mixed methods study
-\item Describe the demographics/cultural information, perspectives of participants, or characteristics of data sources that might influence the data collected.
-\item Describe existing data sources, if relevant (e.g., newspapers, internet, archive).
-\item Provide data repository information for openly shared data, if applicable.
-\item Describe archival searches or process of locating data for analyses, if applicable.
-\end{itemize}
-
-\textit{Guidance for Authors:}
-\begin{itemize}
-\item Because multiple sources of data are collected, separate descriptions of samples are needed when they differ. A table of qualitative sources and quantitative sources is helpful. This table could include type of data, when data were collected, and from whom. This table might also include study aims/research questions for each data source and anticipated outcomes of the study. In mixed methods research, this table is often called an "implementation matrix."
-\item Rather than describe data as represented in numbers versus words, it is better to describe sources of data as open-ended information (e.g., qualitative interviews) and closed-ended information (e.g., quantitative instruments).
-\end{itemize}
-
-\textit{Researcher Description:}
-\begin{itemize}
-\item Describe the researchers’ backgrounds in approaching the study, emphasizing their prior understandings of the phenomena under study (e.g., interviewers, analysts, or research team).
-\item Describe how prior understandings of the phenomena under study were managed and/or influenced the research (e.g., enhancing, limiting, or structuring data collection and analysis).
-\end{itemize}
-
-\textit{Guidance for Authors: }
-Because mixed methods research includes qualitative research, and reflexivity is often included in qualitative research, we recommend statements as to how the researchers’ backgrounds influence the research.
-\textit{Guidance for Reviewers:}
-It is helpful to establish in a publication the researchers’ experiences (or research teams’ experiences) with both qualitative and quantitative research as a prerequisite for conducting mixed methods research
-
-
+{\em\small  Describe the relationships and interactions between researchers and participants relevant to the research process and any impact on the research process (e.g., was there a relationship prior to research, are there any ethical considerations relevant to prior relationships). }
 
 
 \subsection{Participant Recruitment}
+\subsubsection{Recruitment Process}
 
-\subsubsection{Participant Sampling or Selection}
-\begin{itemize}
-\item See the \hyperlink{https://apastyle.apa.org/jars/quantitative}{\color{blue}{JARS-QUANT}} and \hyperlink{https://apastyle.apa.org/jars/qualitative}{\color{blue}{JARS-QUAL}} standards for guidance.
-\item Describe the qualitative and the quantitative sampling in separate sections.
-\item Relate the order of the sections to the procedures used in the mixed methods design type.
-\end{itemize}
+{\em\small Describe the recruitment process (e.g., face-to-face, telephone, mail, email) and any recruitment protocols. Describe any incentives or compensation, and provide assurance of relevant ethical processes of data collection and consent process as relevant (may include institutional review board approval, particular adaptations for vulnerable populations, safety monitoring). Describe the process by which the number of participants was determined in relation to the
+study design. Provide any changes in numbers through attrition and final number of participants/sources (if relevant, refusal rates or reasons for dropout). Describe the rationale for decision to halt data collection (e.g., saturation). Convey the study purpose as portrayed to participants, if different from the purpose stated. }
 
 \subsubsection{Participant Selection}
-\begin{itemize}
-\item See the \hyperlink{https://apastyle.apa.org/jars/quantitative}{\color{blue}{JARS-QUANT}} and \hyperlink{https://apastyle.apa.org/jars/qualitative}{\color{blue}{JARS-QUAL}} standards for guidance.
-\item Discuss the recruitment strategy for qualitative and quantitative research separately.
-\end{itemize}
+
+{\em\small Describe the participants/data source selection process (e.g., purposive sampling methods, such as maximum variation; convenience sampling methods, such as snowball selection; theoretical sampling; diversity sampling) and inclusion/exclusion criteria. Provide the general context for the study (when data were collected, sites of data collection). If your participant selection is from an archived data set, describe the recruitment and selection process from that data set as well as any decisions in selecting sets of participants from that data set. }
 
 \subsection{Data Collection}
 
 \subsubsection{Data Collection/Identification Procedures}
 
-See the \hyperlink{https://apastyle.apa.org/jars/quantitative}{\color{blue}{JARS-QUANT}} and \hyperlink{https://apastyle.apa.org/jars/qualitative}{\color{blue}{JARS-QUAL}} standards for guidance.
+{\em\small State the form of data collected (e.g., interviews, questionnaires, media, observation). Describe the origins or evolution of the data-collection protocol. Describe any alterations of data-collection strategy in response to the evolving findings or the study rationale. Describe the data-selection or data-collection process (e.g., were others present when data were collected, number of times data were collected, duration of collection, context). Convey the extensiveness of engagement (e.g., depth of engagement, time intensiveness of data collection). For interview and written studies, indicate the mean and range of the time duration in the data-collection process (e.g., interviews were held for 75 to 110 min, with an average interview time of 90 min). Describe the management or use of reflexivity in the data-collection process, as it
+illuminates the study. Describe questions asked in data collection: content of central questions, form of questions (e.g., open vs. closed). }
 
 \subsubsection{Recording and Data Transformation}
 
-Identify data audio/visual recording methods, field notes, or transcription processes used.
+{\em\small Identify data audio/visual recording methods, field notes, or transcription processes used.}
 
-\subsection{Data Analysis}
-\begin{itemize}
-\item See the \hyperlink{https://apastyle.apa.org/jars/quantitative}{\color{blue}{JARS-QUANT}} and \hyperlink{https://apastyle.apa.org/jars/qualitative}{\color{blue}{JARS-QUAL}} standards for guidance.
-\item Devote separate sections to the qualitative data analysis, the quantitative data analysis, and the mixed methods analysis. This mixed methods analysis consists of ways that the quantitative and qualitative results will be “mixed” or integrated according to the type of mixed methods design used (e.g., merged in a convergent design, connected in explanatory sequential designs and in exploratory sequential designs).
-\end{itemize}
+\subsection{Analysis}
 
-\subsection{Validity, Reliability, and Methodological Integrity}
-\begin{itemize}
-\item See the \hyperlink{https://apastyle.apa.org/jars/quantitative}{\color{blue}{JARS-QUANT}} and \hyperlink{https://apastyle.apa.org/jars/qualitative}{\color{blue}{JARS-QUAL}} standards for guidance.
-\item Indicate methodological integrity, quantitative validity and reliability, and mixed methods validity or legitimacy. Further assessments of mixed methods integrity are also indicated to show the quality of the research process and the inferences drawn from the intersection of the quantitative and qualitative data.
-\end{itemize}
+\subsubsection{Data-Analytic Strategies}
 
-\section{FINDINGS/RESULTS}
-\begin{itemize}
-\item See the \hyperlink{https://apastyle.apa.org/jars/quantitative}{\color{blue}{JARS-QUANT}} and \hyperlink{https://apastyle.apa.org/jars/qualitative}{\color{blue}{JARS-QUAL}} standards for guidance.
-\item Indicate how the qualitative and quantitative results were “mixed” or integrated (e.g., discussion; tables of joint displays; graphs; data transformation in which one form of data is transformed to the other, such as qualitative text, codes, themes are transformed into quantitative counts or variables).
-\end{itemize}
+{\em\small Describe the methods and procedures used and for what purpose/goal. Explicate in detail the process of analysis, including some discussion of the procedures (e.g., coding, thematic analysis) following a principle of transparency. Describe coders or analysts and their training, if not already described in the researcher
+description section (e.g., coder selection, collaboration groups). Identify whether coding categories emerged from the analyses or were developed a priori. Identify units of analysis (e.g., entire transcript, unit, text) and how units were formed, if applicable. Describe the process of arriving at an analytic scheme, if applicable (e.g., if one was
+developed before or during the analysis or was emergent throughout). Provide illustrations and descriptions of the analytic scheme development, if relevant. Indicate software, if used. }
 
-\textit{Guidance for Authors:}  In mixed methods research, the Findings section typically includes sections on qualitative findings, quantitative results, and mixed methods results. This section should mirror the type of mixed methods design in terms of sequence (i.e., whether quantitative strand or qualitative strand comes first; if both are gathered at the same time, either qualitative findings or quantitative results could be presented first).
+\subsubsection{Methodological Integrity}
 
-\textit{Guidance for Reviewers:} In mixed methods Results sections (or in the Discussion section to follow), authors are conveying their mixed methods analysis through “joint display” tables or graphs that array the qualitative results (e.g., themes) against the quantitative results (e.g., categorical or continuous data). This enables researchers to directly compare results or to see how results differ between the quantitative and qualitative strands.
+{\em\small Demonstrate that the claims made from the analysis are warranted and have produced findings with methodological integrity. The procedures that support methodological integrity (i.e., fidelity and utility) typically are described across the relevant sections of a paper, but they could be addressed in a separate section when elaboration or emphasis would be helpful. Issues of methodological integrity include the following: Assess the adequacy of the data in terms of its ability to capture forms of diversity most relevant to the question, research goals, and inquiry approach. Describe how the researchers’ perspectives were managed in both the data collection and analysis (e.g., to limit their effect on the data collection, to structure the analysis). Demonstrate that findings are grounded in the evidence (e.g., using quotes, excerpts, or descriptions of researchers’ engagement in data collection). Demonstrate that the contributions are insightful and meaningful (e.g., in relation to the current literature and the study goal). Provide relevant contextual information for findings (e.g., setting of study, information about participants, interview question asked is presented before excerpt as needed). Present findings in a coherent manner that makes sense of contradictions or disconfirming evidence in the data (e.g., reconcile discrepancies, describe why a conflict might exist in the findings). Demonstrate consistency with regard to the analytic processes (e.g., analysts may use demonstrations of analyses to support consistency, describe their development of a stable perspective, interrater reliability, consensus) or describe responses to inconsistencies, as relevant (e.g., coders switching midway through analysis, an interruption in the analytic process). If alterations in methodological integrity were made for ethical reasons, explicate those reasons and the adjustments made. Describe how support for claims was supplemented by any checks added to the qualitative analysis. Examples of supplemental checks that can strengthen the research may include: transcripts/data collected returned to participants for feedback triangulation across multiple sources of information, findings, or investigators; checks on the interview thoroughness or interviewer demands; consensus or auditing process; member checks or participant feedback on findings; data displays/matrices; in-depth thick description, case examples, or illustrations; structured methods of researcher reflexivity (e.g., sending memos, field notes, diary, logbooks, journals, bracketing); checks on the utility of findings in responding to the study problem (e.g., an evaluation of whether a solution worked) }
 
-\section{DISCUSSION}
-See the \hyperlink{https://apastyle.apa.org/jars/quantitative}{\color{blue}{JARS-QUANT}} and \hyperlink{https://apastyle.apa.org/jars/qualitative}{\color{blue}{JARS-QUAL}} standards for guidance.
+\section{Findings}
 
-\textit{Guidance for Authors:} Typically, the Discussion section, like the Method and Findings/Results, mirrors in sequence the procedures used in the type of mixed methods design. It also reflects on the implications of the integrated findings from across the two methods.
+{\em\small Describe research findings (e.g., themes, categories, narratives) and the meaning and understandings that the researcher has derived from the data analysis. Present research findings in a way that is compatible with the study design. Demonstrate the analytic process of reaching findings (e.g., quotes, excerpts of data). Present synthesizing illustrations (e.g., diagrams, tables, models), if useful in organizing and conveying findings. Photographs or links to videos can be used. }
 
-\section{ACKNOWLEDGMENTS}
-Acknowledgments are placed before the references. Add information about grants, awards, or other types of funding that you have received to support your research. This information must be anonymized in the version of the paper you submit for review.
+\section{Discussion}
+
+\subsection{Central Contributions to the Discipline}
+
+{\em\small Describe the central contributions and their significance in advancing disciplinary understandings.}
+
+\subsection{Types of Contributions Made by Findings}
+
+{\em\small Describe the types of contributions made by findings (e.g., challenging, elaborating on, and supporting prior research or theory in the literature describing the relevance) and how findings can be best utilized. }
+
+\subsection{Comparing Prior Theories and Research Findings}
+
+{\em\small Identify similarities and differences from prior theories and research findings.}
+
+\subsection{Alternative Explanations of Findings}
+
+{\em\small Reflect on any alternative explanations of the findings.}
+
+\subsection{Strengths and Limitations}
+
+{\em\small Identify the study’s strengths and limitations (e.g., consider how the quality, source, or types of the data or the analytic processes might support or weaken its methodological integrity).}
+
+\subsection{Limitations on Transferability}
+
+{\em\small Describe the limits of the scope of transferability (e.g., what should readers bear in mind when using findings across contexts). }
+
+\subsection{Ethical Dilemmas/Challenges}
+
+{\em\small Revisit any ethical dilemmas or challenges that were encountered, and provide related suggestions for future researchers. }
+
+\subsection{Implications for Future}
+
+{\em\small Consider the implications for future research, policy, or practice.}
+
+\section{Acknowledgements}
+
+{\em\small Acknowledgments are placed before the references. Add information about grants, awards, or other types of funding that you have received to support your research. This information must be anonymized in the version of the paper you submit for review. }
 
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{bibliography.bib}

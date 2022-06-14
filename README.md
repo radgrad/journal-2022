@@ -15,6 +15,9 @@ export LANG=C
 ## Author guidelines
 * Page limit: 15-25 pages.
 
+## JARS stuff
+* https://apastyle.apa.org/jars/qualitative
+
 
 ## To Do
 
