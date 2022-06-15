@@ -50,10 +50,10 @@
 \begin{abstract}
 
 \AbstractCategory{Objectives}
-RadGrad is a curriculum initiative implemented via a web-based application that combines features of social networks, degree planners, and serious games. RadGrad redefines the traditional meanings of ``progress'' and ``success'' in the undergraduate computer science degree program. The primary research question reported in this paper is: What is the impact of RadGrad on student engagement, diversity, and retention, and the opportunities and challenges that result from the use of the system?
+RadGrad is a curriculum initiative implemented via an application that combines features of social networks, degree planners, individual learning plans, and serious games. RadGrad redefines traditional meanings of ``progress'' and ``success'' in the undergraduate computer science degree program in an attempt to improve engagement, retention, and diversity. In this paper, we describe the RadGrad Project and report on an evaluation study designed to assess the impact of RadGrad on student engagement, diversity, and retention. We also present opportunities and challenges that result from the use of the system.
 
 \AbstractCategory{Participants}
-To gain insight into our research question, this paper reports on data we obtained from major stakeholder groups, including: 498 students, 11 Faculty, and 2 Advisors.
+Our evaluation study involved several major stakeholder groups for undergraduate computer science education at our institution, including: 498 students, 11 Faculty, and 2 Advisors.
 
 \AbstractCategory{Study Methods}
 We used a qualitative experimental research design, including data obtained through questionnaire responses from our major stakeholder group as well as data from system instrumentation.
@@ -62,7 +62,7 @@ We used a qualitative experimental research design, including data obtained thro
 We found strong evidence to support the hypothesis that RadGrad can have a positive impact on student engagement in Computer Science for students who are relatively new to the discipline. We found some evidence to support the hypothesis that RadGrad can have a positive impact on student diversity. We were unable to evaluate the impact of RadGrad on retention.
 
 \AbstractCategory{Conclusions}
-The data gathered in this study indicates that technologies like RadGrad provide a promising means to improve engagement, diversity, and (potentially) retention in Computer Science.  The data suggests that development and evaluation of RadGrad at other institutions and/or in other STEM disciplines would provide useful insight into the generality of the approach. It also indicates that faculty engagement with the technology would increase its effectiveness, but that obtaining faculty buy-in is challenging.
+The data gathered in this study indicates that approaches like RadGrad provide a promising means to improve engagement, diversity, and (potentially) retention in Computer Science.  The data suggests that development and evaluation of RadGrad at other institutions and/or in other STEM disciplines would provide useful insight into the generality of the approach. It also indicates that faculty engagement with the technology would increase its effectiveness, but that obtaining faculty buy-in is challenging.
 
 \end{abstract}
 
@@ -93,11 +93,93 @@ The data gathered in this study indicates that technologies like RadGrad provide
 \subsection{Research Problem}
 {\em\small Frame the problem or question and its context. Review, critique, and synthesize the applicable literature to identify key issues/debates/theoretical frameworks in the relevant literature to clarify barriers, knowledge gaps, or practical needs.}
 
+Traditional curriculum initiatives for undergraduate computer science generally fall into one of three categories. The first involves the injection of a specific technology across the curriculum, such as initiatives for cloud computing \cite{deb_module-based_2019}. The second involves the injection of a specific domain across the curriculum, such as initiatives for cybersecurity \cite{tang_shaping_2019} or distributed computing \cite{abebe_watdfs:_2019}. The third involves the integration of practices intended to address demographic problems including lack of access or diversity, such as initiatives at the University of Illinois \cite{metcalf_diversity_2018} and University of Oklahoma \cite{collain_you_2019}.
+
+One problem with these types of curriculum initiatives is that they all require changing, well, the curriculum.  This is a problem because changing the curriculum is hard: any significant curriculum change will require the approval of committees at multiple levels of the educational institution, it will require buy-in across the faculty, and it will often require significant resources to implement and sustain.
+
+A benefit of changing the curriculum is that if it is accomplished, then {\em student} buy-in is normally not required. Because the change is to the curriculum, if a student wants to graduate, then they must follow the changed curriculum.
+
+At our University, we have been experimenting with an initiative called "RadGrad", which falls outside these typical categories of curriculum initiatives, and as a result inverts the typical problems and benefits associated with traditional curriculum initiatives.
+
+RadGrad originally rose from a recognition that our department did not have the resources to enable its curriculum to keep up with the rate of change in computer science technology and the ever widening domain of application areas, nor could we keep up with student demand for access to curriculum content.  In some cases, the local high tech community or online educational services could fill in the gaps, but our department provided no support for student awareness of these extracurricular resources, or guidance as to which ones were worth spending time on, or how such activities might integrate with existing curricular offerings.  Finally, since extracurricular activities, are, by definition, "extra", there is a structural incentive for students to limit these activities and instead focus on curricular work which directly affects their GPA.
+
+A second motivation for RadGrad was the recognition that the increase in demand for our undergraduate computer science degree programs was paradoxically leading to a decrease in the diversity of our student body. Increasingly few women and underrepresented groups were making it all the way through our program to graduation. Although approximately 40\% of our first year students each year are women, only 15\% of our graduating seniors in AY 2018 were women.
+
+To address these issues, we created RadGrad, which is a web-based application that combines features of social networks, degree planners, and serious games.  Students in our major can login to RadGrad and declare their interests and career goals. The system then recommends faculty-curated extracurricular opportunities matching their preferences. A degree planner tool enables students to lay out their "degree experience" as a combination of curricular activities (courses) and extracurricular activities (internships, meetups, online courses, hackathons, etc) for each upcoming semester until their planned graduation date. Finally, RadGrad enables students to learn about the broader ways in which computer science impacts upon local, national, and global society, as well as helping them to connect with and create communities of practice inside and outside of the department. As will be discussed below, related research suggests that making these connections can improve student engagement, diversity, and retention.
+
+To combat the view of extracurricular activities being perceived as "extra", RadGrad does not use GPA to represent student success or progress. Instead, RadGrad provides a three component metric called "ICE", an acronym for Innovation, Competency, and Experience. Students are awarded Competency points for successfully completing a course, and a varying amount of Innovation and/or Experience points for successfully completing an extracurricular activity defined within the system. For example, participating in a hackathon will earn some number of Innovation points, since the goal of hackathons is to create something new.  Finishing a summer internship in a high tech company will earn Experience points since that activity provides students with a sense for the demands of a high tech workplace environment. (Depending upon the nature of the internship, it could also earn Innovation points.) To "win" at RadGrad, students must (among other things) earn at least 100 Innovation, Competency, and Experience points by completing some combination of curricular and extracurricular activities by the time they graduate.
+
+Unlike traditional curriculum initiatives, RadGrad exists apart from the official curriculum requirements for our degree programs. As a result, we have been free to deploy and experiment with the approach without the multi-year approval process normally required for curriculum changes.  On the down-side, participation in RadGrad is voluntary, and so students must opt in to the system and its philosophy to gain its benefits.
 
 \subsection{Research Goals}
 {\em\small State the purpose(s)/goal(s)/aim(s) of the study. State the target audience, if specific. Provide the rationale for fit of design used to investigate this purpose/goal (e.g., theory building, explanatory, developing understanding, social action, description, highlighting social practices). Describe the approach to inquiry, if it illuminates the objectives and research rationale (e.g., descriptive, interpretive, feminist, psychoanalytic, postpositivist, critical, postmodern, constructivist, or pragmatic approaches).}
 
+To better understand the benefits and challenges associated with RadGrad, we would like to gain insight into the following research questions:
+
+\begin{itemize}
+\item Do students, when introduced to the system, find it of value to their educational experience?
+\item Do students, after completing their degree program, view RadGrad as having improved their educational experience?
+\item What do these findings imply regarding engagement, diversity, and retention?
+\end{itemize}
+
+During Academic Year 2021-2022, we conducted a qualitative case study that was designed to provide evidence regarding these research questions.  We report on this study starting in Section \ref{sec:method}. First, however, we step back to better motivate the design of RadGrad, as well as describe the system in more detail.
+
+\section{Related Work}
+\label{sec:related-work}
+
+There is a national need for undergraduate computer science degree programs to improve both retention (the percentage of students entering CS programs who finish the degree) and diversity (the percentage of graduates who are female and/or from an underrepresented minority group).  We need to improve retention because the projected demand for skills in computer science far exceeds current production \cite{camp_generation_2017}.  We need to improve diversity because a more diverse STEM population improves tech innovation at large. For example, mixed-sex teams filed 40\% more information and technology patents than all-male teams \cite{ashcraft_who_2012}, and management diversity leads to a \$42M increase in S\&P value of firms \cite{dezso_girl_2007}.
+
+While the need is clear, solutions are complicated. Gender diversity in computer science has actually fallen in the last 20 years \cite{hong_women_2014}, with no well accepted explanation for its cause. Some diversity-related issues start in middle and high school: black students are less likely than white students to have computer science courses in middle and high school, and female students are less likely than male students to be told they would be good at computer science \cite{inc_diversity_2016}.   There is some research that provides evidence for a way forward: a study by Google \cite{hong_women_2014} concludes that four factors primarily influence young womens' decision to pursue CS: (1) social encouragement (positive reinforcement of CS pursuits from family and peers); (2) self perception (an interest in problem solving and a belief that those skills can be translated to a successful career); (3) academic exposure (availability of curricular and extracurricular CS activities); and (4) career perception (view of CS as a career with diverse applications and a broad potential for positive societal impact). Stout and Camp \cite{stout_now_2014} make similar points around social relevance, a sense of belonging, and cultural bias. RadGrad implements capabilities designed to help address isssues around self perception, academic exposure, career perception, and social relevance among its student users.
+
+For those high school students who graduate and enter an undergraduate degree program in computer science, retention becomes a significant issue.   More than half of the students who start out in science or engineering switch to other majors or do not finish college at all \cite{kober_reaching_2015}. Initiatives to improve retention, such as the Threads undergraduate curriculum at Georgia Tech, emphasize giving students more control over their degree plan, a better understanding of how their studies relate to their career interests, and an increased emphasis on the importance of extracurricular activities \cite{barrett_expanding_2017}. RadGrad provides a technology platform, information system, and incentive structure with these emphases.
+
+Communities of Practice (CoP) is a theory of learning first proposed in 1991 \cite{lave_situated_1991}, more fully developed in 1998 \cite{wenger_communities_1998}, and extended to "landscapes of practice" in 2004 \cite{wenger_learning_2004}. A loose definition of Communities of Practice is "groups of people who share a concern or a passion for something they do and learn how to do it better as they interact regularly." More specifically, three characteristics distinguish a community of practice from other kinds of communities: (1) There is at least one domain of interest shared by all members; (2) members engage in joint activities and discussions, help each other, and share information;  and (3) members are practitioners in the domain, not just people with shared interests, and thus develop a shared repertoire of resources.
+
+Communities of Practice show great promise for improving undergraduate retention and diversity, because participating students will find a new source for social encouragement, self-perception, academic exposure, and career perception. In undergraduate degree programs, CoPs are primarily found within disciplinary-specific extracurricular activities: clubs, meetups, hackathons, and so forth. RadGrad makes these CoPs visible to students, and provides incentives to students for participating in them.
+
+
+\section{RadGrad}
+\label{sec:radgrad}
+
+The RadGrad project began in the Fall of 2015. For the first few years, development was student-led as part of various software engineering classes. Development activities during this time focused on the underlying data model, user interface mockups, and possible game mechanics. In 2017, a pilot implementation was deployed into a computer science department and some we began receiving user feedback. In 2018, we began work on RadGrad Version 2, an "industrial strength" version of the system that followed high quality software engineering practices and would enable deployment to different institutions and disciplines. RadGrad is now a fully functional web-based application, implemented in approximately 30,000 lines of Javascript and 7,000 lines of HTML. It has extensive design and development documentation, unit and integration tests, and implements continuous integration. Instances can be deployed locally or using a cloud-based hosting service such as Digital Ocean. Over 1,000 students have used RadGrad to date.
+
+Figure \ref{fig:radgrad} shows the RadGrad Degree Plan page which illustrates several capabilities of the system. The left side contains a four by three grid representing four academic years each containing three semesters (Fall, Spring, Summer).  For each of the 12 semesters, this hypothetical student indicates not just their CS-related curricular activities (i.e. Courses) but also their CS-related extracurricular activites (called "Opportunities" in RadGrad).
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{guidedtour-degreeplan.png.eps}
+\caption{\em RadGrad Degree Plan page}
+\label{fig:radgrad}
+\end{figure}
+
+The right hand side has two panes, one providing an "Inspector" and one providing an "Academic Plan" browser. The Inspector allows students to browse the currently available Courses and Opportunities and learn details about them including a description, links to external resources, the number of ICE points that can be earned by completing the Course or Opportunity, and which (if any) of the student's declared Interests are matched by the Course or Opportunity. The Academic Plan browser presents the set of academic plans available to that student (i.e. "B.S. Computer Science", "B.A. Computer Science", etc.) along with a canonical 8 semester plan to complete the coursework for the degree. The Academic Plan shows a course in green if it is present in the student's plan, and red if it not yet added. A drag-and-drop UI allows students to easily take Courses from the Academic Plan pane and put them into their Degree Plan.
+
+Each page has a documentation pane that is displayed with a light green background and is located just below the navbar. Clicking the triangle on the left side reveals documentation about the current page.
+
+For students, the RadGrad UI is organized into four top-level pages as shown in the tabbed area underneath the navbar.  The Home page provides a place for students to update their profile to indicate their current Career Goals and Interests, as well as personal information such as their picture and personal home page.  The Explorer page allows students to browse Courses, Opportunities, Career Goals, Interests, and Academic Plans.  The Degree Planner page (as show in Figure \ref{fig:radgrad}) allows students to design their degree experience as a combination of curricular and extracurricular activities.  The Mentor Space page provides a mechanism for students to engage with alumni and local high tech professionals to learn more about career opportunities and other information about professional life.
+
+Figure \ref{fig:ice} zooms in on the portion of the navigation bar containing a student's Level ( a green RadGrad icon) and ICE Points (three circles containing numbers inside). RadGrad provides a game mechanic consisting of six "Levels", each represented by a different colored RadGrad icon. As students earn ICE Points and carry out other RadGrad activities, such as writing reviews of courses and opportunities, they can progress through white, yellow, green, blue, brown, and black levels, similar to martial art belt colors. The rules for achieving Levels are designed such that a motivated student can achieve a new Level each semester, so a total of six semesters (typically three years) is required to get through all Levels. We print laptop stickers for each Level, and students can get a new laptop sticker free from the department with the color corresponding to each Level as they achieve it. This provides visibility for RadGrad and for the student's participation.  The student in Figure \ref{fig:ice} is currently at Level 3 (green).
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{ice-points-navbar.png.eps}
+\caption{\em UI for student Level and ICE Points}
+\label{fig:ice}
+\end{figure}
+
+We developed a circular representation for ICE Points to help students quickly understand their progress using RadGrad.  Achieving a successful undergraduate degree experience according to RadGrad's game mechanics means that a student must first plan out a sequence of curricular and extracurricular activities that will eventually earn them at least 100 Innovation, Competency, and Experience points. Once they have made that plan (which they are free to change at any time), they must then actually earn the points by completing the curricular and extracurricular activities. To verify completion of a curricular activity, RadGrad imports data from the University's course management system indicating the coursework the student has taken and the grade they received.  To verify completion of an extracurricular activity, the student must first "request verification" of the Opportunity.  This request sends a message to the RadGrad administrator or faculty member who has responsibility for checking that the student participated. The admin or faculty member can accept or decline the verification request, and if accepted, the system will award the points associated with the Opportunity to the student.
+
+RadGrad represents ICE by three circles: a green circle for Innovation, a blue circle for Competency, and a red circle for Experience. For each of the three components of ICE, the circle is partially or fully colored in a light shade to represent the number of {\em planned} points, based upon what the student has put in their degree plan. In Figure \ref{fig:ice}, the Innovation circle is colored only half way in a light green color, which indicates that this student has only planned to earn 50 Innovation points so far.  The blue circle is completely filled in, indicating that the student has planned to achieve 100 Competency points.  Finally, the Experience circle is also only half filled, indicating that only 50 Experience points are currently in the degree plan.
+
+RadGrad uses a dark shade on the circle to represent the number of points actually earned so far, and also indicates that number in the center of the circle. So, the student in Figure \ref{fig:ice} has so far earned 5 Innovation, 78 Competency, and 5 Experience points.
+
+Finally, RadGrad defines four other roles for users in addition to Student: Admin, Faculty, Advisor, and Mentor. The user interface to RadGrad varies significantly in functionality depending upon the role of the user.  For example, users with the Advisor role have the ability to add new students to the system, and see existing student degree plans. Due to space limitations, only a brief overview of functions and capabilities associated with the Student role are described in this section. For more detailed information about the system, please go to https://radgrad.org.
+
+
+
+
 \section{Method}
+\label{sec:method}
 
 \subsection{Research Design Overview}
 
@@ -195,9 +277,8 @@ developed before or during the analysis or was emergent throughout). Provide ill
 {\em\small Acknowledgments are placed before the references. Add information about grants, awards, or other types of funding that you have received to support your research. This information must be anonymized in the version of the paper you submit for review. }
 
 \bibliographystyle{ACM-Reference-Format}
-\bibliography{bibliography.bib}
+\bibliography{radgrad}
 
-\appendix
 
 
 \end{document}
