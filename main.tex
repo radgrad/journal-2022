@@ -145,13 +145,36 @@ Communities of Practice show great promise for improving undergraduate retention
 \section{RadGrad}
 \label{sec:radgrad}
 
-The RadGrad project began in the Fall of 2015. For the first few years, development was student-led as part of various software engineering classes. Development activities during this time focused on the underlying data model, user interface mockups, and possible game mechanics. In 2017, a pilot implementation was deployed into a computer science department and some we began receiving user feedback. In 2018, we began work on RadGrad Version 2, an "industrial strength" version of the system that followed high quality software engineering practices and would enable deployment to different institutions and disciplines. RadGrad is now a fully functional web-based application, implemented in approximately 30,000 lines of Javascript and 7,000 lines of HTML. It has extensive design and development documentation, unit and integration tests, and implements continuous integration. Instances can be deployed locally or using a cloud-based hosting service such as Digital Ocean. Over 1,000 students have used RadGrad to date.
+The RadGrad project began in the Fall of 2015. For the first few years, development was student-led as part of various software engineering classes. Development activities during this time focused on the underlying data model, user interface mockups, and possible game mechanics. In 2017, a pilot implementation was deployed into a computer science department and some we began receiving user feedback. In 2018, we began work on RadGrad Version 2, an "industrial strength" version of the system that followed high quality software engineering practices and would enable deployment to different institutions and disciplines. From a technical perspective, RadGrad is now a functional and reliable web-based application, implemented in approximately 30,000 lines of Javascript and 7,000 lines of HTML. It has extensive design and development documentation, unit and integration tests, and implements continuous integration. Instances can be deployed locally or using a cloud-based hosting service such as Digital Ocean. Over 1,000 students have used RadGrad to date.
+
+\subsection{Theory of Change}
+
+These experiences have helped us understand the "workflow" of RadGrad, and how it implements a theory of change for students, as illustrated by Figure \ref{fig:theory-of-change}.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{images/radgrad-workflow.eps}
+\caption{\em RadGrad Theory of Change/Workflow. Orange boxes indicate actions taken by administrators, blue boxes indicate actions taken by students.}
+\label{fig:theory-of-change}
+\end{figure}
+
+We find that many students in the {\em Pre-RadGrad} phase have a narrow, stereotyped view of computer science as a discipline (i.e. "it's only about video games") and the students who pursue the major (i.e. "introverted, anti-social white or asian male gamers").
+
+The {\em Onboarding} phase represents the first exposure of students to RadGrad, and hopefully occurs by the time of their first or second semesters in the degree program. Each RadGrad instance is invitation-only, so an administrator must run scripts to create accounts and upload data on completed degree program coursework. Once registered, students login to the system using their institutional authentication mechanism. We provide an online Onboarding guide \cite{radgrad-student-onboarding-guide} that students can follow to familiarize themselves with the system, which teaches them how to select an initial set of Career Goals, Interests, Courses, and Opportunities that they find of interest. RadGrad provides a recommendation system so that once students select Career Goals and Interests, the system can bring related Courses and Opportunities to their attention.  The anticipated outcome of the Onboarding process is an increased awareness of the range of disciplinary pursuits, along with concrete activities to pursue to actively explore them.
+
+The {\em Degree Program Use} phase represents the remainder of the student's degree program, in which they can refer back to RadGrad for new Career Goals and Interests and how they relate to new Courses and Opportunities. RadGrad also includes a Review system that enables students to read about the experiences of other students with Courses and Opportunities. Unlike conventional online systems (like "Rate My Professor"), RadGrad Reviews are not anonymous and are subject to moderation; these two features encourage high quality, thoughtful reviews.  The most important goal during Degree Program Use is for students to actually take part in Opportunities, which will connect them with Communities of Practice (both on or off-campus) in a particular disciplinary area. RadGrad provides two game mechanics (ICE Points and Levels) for students who are motivated by those kinds of things.
+
+The {\em After Graduation} phase represents the state of affairs shortly after matriculation.  Our theory of change predicts that students who have taken part in RadGrad will have been more engaged with a wider variety of disciplinary activities occurring both on and off campus, and that those experiences will help them successfully enter into a fulfilling professional position.
+
+\subsection{User interface}
+
+Designing a desirable theory of change is one thing, designing and implementing a usable UI to support it is quite another. The RadGrad user interface has been re-designed several times over the past five years based on feedback from students, faculty, and advisors.
 
 Figure \ref{fig:radgrad} shows the RadGrad Degree Plan page which illustrates several capabilities of the system. The left side contains a four by three grid representing four academic years each containing three semesters (Fall, Spring, Summer).  For each of the 12 semesters, this hypothetical student indicates not just their CS-related curricular activities (i.e. Courses) but also their CS-related extracurricular activites (called "Opportunities" in RadGrad).
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=\linewidth]{dora-planner.eps}
+\includegraphics[width=\linewidth]{images/dora-planner.eps}
 \caption{\em RadGrad Degree Plan page}
 \label{fig:radgrad}
 \end{figure}
@@ -166,7 +189,7 @@ Figure \ref{fig:ice} zooms in on the portion of the navigation bar containing a 
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\linewidth]{ice-points-navbar.png.eps}
+\includegraphics[width=\linewidth]{images/ice-points-navbar.png.eps}
 \caption{\em UI for student Level and ICE Points}
 \label{fig:ice}
 \end{figure}
@@ -281,6 +304,8 @@ CS Education for the Socially-Just worlds we need
 Confronting inequities: a case for critical theory
 
 intersectional experiences of black women in computing
+
+What is the theory of change for faculty? for administrators?
 
 \section{Acknowledgements}
 

@@ -25,6 +25,8 @@ Review submission guidelines:
 ```
 convert -monochrome wodcard.jpg -resize 35% wodcard.eps
 convert dora.png dora.eps
+
+cd images; convert radgrad-workflow.png radgrad-workflow.eps; cd ..   
 ```
 
 ## Fixing "sed RE error: illegal byte sequence" problem
