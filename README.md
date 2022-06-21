@@ -8,6 +8,7 @@ Related work
   * Cal NERDS
 RadGrad
   * Review and update screen images if needed
+  * 1560x910 screen shot size
 Method
   * Write this from scratch
   * Research qualitatitive methods
