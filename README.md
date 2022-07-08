@@ -1,24 +1,39 @@
 # RadGrad 2022 Journal Article
 
 ## To Do
-Introduction
-  * Review and revise research goals
 Related work
   * Integrate other paper citations
   * Cal NERDS
-RadGrad
-  * Review and update screen images if needed
-  * 1560x910 screen shot size
-Method
-  * Write this from scratch
-  * Research qualitatitive methods
-  * Build additional ratings spreadsheets
-  * Calculate Inter-rater reliability
+
+Re-code more ratings:
+* https://www.radgrad.org/docs/evaluation/overview
+* ICS 111, F21 (Philip, *Cam)
+* ICS 111, S22  (Cam, Philip)
+* ICS 211 S22 (Seungoh, Philip)
+* ICS 314 F21 (Peter, *Philip)
+* ICS 314 S22 (Philip, *Cam)
+
 Findings
-  * Write this from scratch
+
+Early Stage Students
+  * Descriptive statistics on essays: total words, average per essay, min, max, standard deviation.
+  * Descriptive statistics on coding categories
+  * Data excerpts for each category
+
+Other stakeholders
+  * Descriptive statistics
+  * Excerpts
+
+Discussion
+
 Review submission guidelines: 
   * anonymization: https://dl.acm.org/journal/toce/author-guidelines
   * Page limit: 15-25
+
+Improve behavioral instrumentation, redeploy.
+
+
+111 students aren't necessarily CS majors, which could account for large numbers of Level 1.
 
 ## Image conversion
 
