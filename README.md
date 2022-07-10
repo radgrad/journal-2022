@@ -1,6 +1,25 @@
 # RadGrad 2022 Journal Article
 
 ## To Do
+
+Next Steps:
+* Calculate Inter-rater reliability
+* Findings section
+  * New Students 
+    * Descriptive Statistics on Essays
+    * Coding results
+      * Inter-rater reliability.
+      * Coding Categories.
+      * Results by category, including quotes.
+    * Behavioral instrumentation
+  * Graduating students
+    * Descriptive statistics on questionnaire answers.
+    * Example comments
+  * Repeat for Faculty, Advisors
+
+* Discussion section
+  * 111 students aren't necessarily CS majors, which could account for large numbers of Level 1.
+
 Related work
   * Integrate other paper citations
   * Cal NERDS
@@ -10,30 +29,12 @@ Re-code more ratings:
 * ICS 111, F21 (Philip, *Cam)
 * ICS 111, S22  (Cam, Philip)
 * ICS 211 S22 (Seungoh, Philip)
-* ICS 314 F21 (Peter, *Philip)
+* ICS 314 F21 (Peter, Philip)
 * ICS 314 S22 (Philip, *Cam)
-
-Findings
-
-Early Stage Students
-  * Descriptive statistics on essays: total words, average per essay, min, max, standard deviation.
-  * Descriptive statistics on coding categories
-  * Data excerpts for each category
-
-Other stakeholders
-  * Descriptive statistics
-  * Excerpts
-
-Discussion
 
 Review submission guidelines: 
   * anonymization: https://dl.acm.org/journal/toce/author-guidelines
   * Page limit: 15-25
-
-Improve behavioral instrumentation, redeploy.
-
-
-111 students aren't necessarily CS majors, which could account for large numbers of Level 1.
 
 ## Image conversion
 
