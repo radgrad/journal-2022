@@ -3,7 +3,6 @@
 ## To Do
 
 Next Steps:
-* Calculate Inter-rater reliability
 * Findings section
   * New Students 
     * Descriptive Statistics on Essays
