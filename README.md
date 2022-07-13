@@ -2,16 +2,14 @@
 
 ## To Do
 
-Next Steps:
-* Findings section
-    * Graduating students
-      * Descriptive statistics on questionnaire answers.
-      * Example comments
-    * Faculty
-    * Advisors
-    * Behavioral instrumentation
+Findings section
+  * Faculty
+  * Advisors
+  * Behavioral instrumentation
 
-* Discussion section
+Refer to "STAR" consistently.
+
+Discussion section
   * 111 students aren't necessarily CS majors, which could account for large numbers of Level 1.
 
 Related work
