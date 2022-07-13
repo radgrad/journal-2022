@@ -4,6 +4,7 @@
 \usepackage{listings}
 \usepackage{subcaption}
 \usepackage[T1]{fontenc}
+\usepackage{enumitem}
 
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08emT\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \acmYear{2022} \acmVolume{1} \acmNumber{1} \acmArticle{1} \acmMonth{1}
@@ -91,6 +92,7 @@ The data gathered in this study indicates that approaches like RadGrad provide a
 \section{Introduction}
 
 \subsection{Research Problem}
+
 {\em\small Frame the problem or question and its context. Review, critique, and synthesize the applicable literature to identify key issues/debates/theoretical frameworks in the relevant literature to clarify barriers, knowledge gaps, or practical needs.}
 
 Traditional curriculum initiatives for undergraduate computer science generally fall into one of three categories. The first involves the injection of a specific technology across the curriculum, such as initiatives for cloud computing \cite{deb_module-based_2019}. The second involves the injection of a specific domain across the curriculum, such as initiatives for cybersecurity \cite{tang_shaping_2019} or distributed computing \cite{abebe_watdfs:_2019}. The third involves the integration of practices intended to address demographic problems including lack of access or diversity, such as initiatives at the University of Illinois \cite{metcalf_diversity_2018} and University of Oklahoma \cite{collain_you_2019}.
@@ -346,13 +348,17 @@ We identified the {\em Advisor} stakeholder group as all of the undergraduate ad
 
 For the Recent Graduate, Faculty, and Advisor stakeholder groups, the number of responses were too small (23, 10, and 2 respectively) to apply any formal statistical analysis.  Instead, we will present descriptive statistics and summaries of any short answer responses.
 
-For the Early Stage Student stakeholder groups, we collected 187 essays, ranging in length from a short paragraph to several paragraphs. This was enough data to support a more formal analysis strategy of qualitative data coding \cite{raun_successful_2013}. In our case, we first generated a set of categories based upon our top-level research questions and preliminary review of a subset of essays, then randomly assigned each essay to two researchers to code independently. Our set of coding categories is listed in Appendix \ref{sec:coding-categories}. After each essay was coded by two researchers, we calculated Inter-Rater Reliability for each encoding as the percentage of ratings that were in absolute agreement and found that we met the "minimum standards" for reliability \cite{graham_measuring_2012} with a combined IRR of XX\%. We then performed a third review of codings that were in disagreement in order to obtain a "tie-breaker" value.
+For the Early Stage Student stakeholder groups, we collected 187 essays, ranging in length from a short paragraph to several paragraphs. This was enough data to support a more formal analysis strategy of qualitative data coding \cite{raun_successful_2013}. In our case, we first generated a set of categories based upon our top-level research questions and preliminary review of a subset of essays, then randomly assigned each essay to two researchers to code independently. Our set of coding categories is listed in Appendix \ref{sec:coding-categories}. After each essay was coded by two researchers, we calculated Inter-Rater Reliability (IRR) for each encoding as the percentage of ratings that were in absolute agreement and found that we exceeded the "minimum standards" for reliability \cite{graham_measuring_2012} with an IRR of 79\%. We then performed a third review of codings in order to obtain a "tie-breaker" value for the percentage of essays including each coding category.
 
 \section{Findings}
 
 \subsection{Early Stage Student Stakeholders}
 
+\subsubsection{Descriptive statistics}
+
 As noted above, we collected data from Early Stage Student Stakeholders in the form of essays that they wrote soon after completing the New Student Tutorial.  Figure \ref{fig:essay-stats} provides an overview of this data. We collected data from a first semester class and a third semester class in both Fall and Spring semesters. We were only able to collect data from a second semester class in Spring semester. This resulted in a pool of 475 early stage students, of whom 39\% engaged in the New Student Tutorial and submitted an essay reflecting on their experience.
+
+It is important when analyzing these findings to note that the essay prompt was non-specific: "a short 2 - 3 paragraph reflection on your experience with RadGrad."  This means that frequently occurring coding categories in essays provide significant evidence to support the assertion of the category, but it does not imply that infrequently occurring coding categories provide evidence {\em against} the assertion. For example, the essay writer might agree strongly with an assertion, but might have simply not thought to write about it or run out of time.
 
 Figure \ref{fig:essay-stats} also provides descriptive statistics regarding the length of the essays in terms of the minimum, maximum, average, and median number of words. Interestingly, the length of the essays trends upwards with the semester: first semester students wrote the shortest essays, and third semester students wrote the longest essays.  A rule of thumb is that 500 words is equivalent to a page of text, and so the table reveals that first semester students wrote about a third of a page of text, while third semester students generally wrote about a page of text. There was a grand total of 48,993 words, or approximately 98 pages of essay writing to be coded.
 
@@ -375,7 +381,7 @@ Total & 475 & 187 & 39\% & 22 & 877 & 266 & 224\\
 \label{fig:essay-stats}
 \end{figure}
 
-Figure \ref{fig:coding-stats} provides descriptive statistics on the results of coding the essays.
+Figure \ref{fig:coding-stats} provides aggregate, descriptive statistics on the results of coding the 187 essays. The results are ordered by the percentage of essays containing comments that support the assertion of the coding category. To provide a deeper perspective on these numbers, the following sections present some quotes from the essays regarding the various categories.
 
 \begin{figure}[th]
 \centering
@@ -384,28 +390,121 @@ Figure \ref{fig:coding-stats} provides descriptive statistics on the results of 
 \hline
  Category &  Total & Percentage   \\
 \hline
-RadGrad provides useful information.                  & 102 & 55\% \\
-The course explorer is useful.                        & 106 & 57\% \\
-The opportunity explorer is useful.                   & 146 & 78\% \\
+RadGrad provides useful information.                  & 143 & 76\% \\
+The opportunity explorer is useful.                   & 140 & 75\% \\
+The course explorer is useful.                        & 118 & 63\% \\
+RadGrad broadened my perspective on computer science. & 117 & 63\% \\
 The career goals explorer is useful.                  & 95 & 51\% \\
-The interests explorer is useful.                     & 64 & 34\% \\
-The degree planner is useful.                         & 66 & 35\% \\
-The game mechanics (ICE points, Levels) are useful.   & 27 & 15\% \\
-Course and/or Opportunity Reviews are useful.         & 22 & 12\% \\
-RadGrad provides useful information
-for women and/or underrepresented groups.             & 3 & 16\% \\
-RadGrad is well-designed and easy to use.             & 29 & 16\% \\
-I will use RadGrad in future.                         & 39 & 21\% \\
+The degree planner is useful.                         & 85 & 45\% \\
+The interests explorer is useful.                     & 67 & 36\% \\
+RadGrad helps create communities of practice.         & 56 & 30\% \\
+I will use RadGrad in future.                         & 41 & 22\% \\
+RadGrad is well-designed and easy to use.             & 36 & 19\% \\
+The game mechanics (ICE points, Levels) are useful.   & 31 & 17\% \\
+Course and/or Opportunity Reviews are useful.         & 27 & 14\% \\
+Internships are important in RadGrad.                 & 23 & 12\% \\
 There are interactions between STAR and RadGrad.      & 17 & 9\% \\
-RadGrad helps create communities of practice.         & 48 & 26\% \\
-Internships are important in RadGrad.                 & 27 & 15\% \\
-RadGrad broadened my perspective on computer science. & 78 & 42\% \\
+RadGrad provides useful information
+for women and/or underrepresented groups.             & 6 & 3\% \\
 \hline
 \end{tabular}
-\caption{\em Coding Statistics. For each category, the number (and percentage) of essays that contained text agreeing with that assertion.}
+\caption{\em Coding Statistics, ordered by percentage. For each category, the number (and percentage) of essays that contained text agreeing with that assertion.}
 \normalsize
 \label{fig:coding-stats}
 \end{figure}
+
+\subsubsection{RadGrad provides useful information.} This is a kind of "aggregate" category, in that if an essay writer indicated that a specific RadGrad feature (Explorer, Degree Planner, Reviews, etc) was useful, then we infer that they also find RadGrad in general to be useful. As a result, we find that approximately three out of four essays included text that supported the assertion that RadGrad provides useful information. Here is an example excerpt that touches on many of the features:
+
+\begin{itemize}[leftmargin=*]
+\item "After spending about an hour going through RadGrad, I learned a lot more about courses, opportunities, and possible career interests. These are all things I hear older people talking about, but I never spend a lot of time thinking about them myself. I just let [the system registration system] tell me what classes to take, say I’ll think about opportunities later, and tell people I don’t know what I want to do in the future. RadGrad forced me to actually think about the classes I’m going to be taking. RadGrad also showed me opportunities available to me and made me choose some. RadGrad also made me choose computer science related jobs and see what common interests they share. Overall, in the hour or two I spent working on my RadGrad profile, I learned a lot about future classes, opportunities I can take advantage of, and several possible career choices."
+\end{itemize}
+
+\subsubsection{RadGrad Explorers are useful.} RadGrad includes four "explorers", all of which were mentioned frequently in essays. The Opportunity (i.e. extra-curricular activity) Explorer was mentioned in 75\% of the essays, the Course Explorer in 63\%, the Career Goals Explorer in 51\%, and the Interests Explorer in 36\%. Some excerpts supporting this assertion are:
+
+\begin{itemize}[leftmargin=*]
+\item "I thought that it was cool that they suggested some careers and extra-curriculars based on your interests and career goals.",
+\item "Sometimes, college students have trouble finding extracurricular activities, and RadGrad organized, described, and allowed you to schedule these opportunities, which was very helpful.",
+\item "At times I have felt rudderless, not knowing the correct classes to take for my degree plan. However, RadGrad reveals many different options with in-depth descriptions, allowing me to make an informed decision to further my degree path."
+\end{itemize}
+
+\subsubsection{RadGrad broadened my perspective on computer science.} After Opportunity and Course Explorer usefulness, the ability of RadGrad to "broaden one's perspective" was the most widely cited capability of the system, appearing in 63\% of the essays. Some excerpts supporting this assertion are:
+
+\begin{itemize}[leftmargin=*]
+\item "When I used to think about computer science, I would have a mental image of thousands of lines of code for some tech company to use in their newest product, for example a router, but I never realized how computer science could be used in so many non-technical fields. As someone who has always been extremely interested in social issues, I was really interested to hear about some of the applications and opportunities people are working on.",
+\item "Previously, I thought that Computer science was just about writing code. Now that I saw RadGrad, I see that there are hundreds of interest categories available to focus on.",
+\item "I have not known many careers in the computer field, the only three jobs I know when I was a freshman in college is software engineer, programmer, and web developer. In RadGrad, I learn a new career named ux designer, which is design web application based on users’ needs.",
+\item "But what really impressed me was the career goals and courses. The career goals opened my eyes to the multitude of possibilities that ICS is capable of. Many of these career paths were unknown to me till that moment. I actually found a decent amount of careers that I wouldn’t mind exploring better."
+\end{itemize}
+
+There were also many comments associated with this category that implied a positive impact of RadGrad upon engagement and retention. For example,
+\begin{itemize}[leftmargin=*]
+\item "My first time I had to come to class I felt so lost and unsure of where I was going. I also do not know any of the clubs that are offered or the various opportunities that are available to us. Radgrad has helped me to get a better understanding of the different opportunities.",
+\item "At that time, I was still on the edge of whether or not I wanted to commit to pursuing a degree in computer science. Therefore, seeing this website at that time helped me to see what kind of interests I had matched up with the courses or opportunities out there. At that time, it also helped take some of the uneasiness off my shoulders because I thought that going into computer science means there are only careers related to coding. I gained new insight into how much of a variety computer science can offer.",
+\item "RadGrad is an entry way into a world of computer science I had no idea was within my reach. There were many new interests and career interests to be explored. I had no idea the number of events that go on throughout the year.",
+\item "One class that I was scared of was ICS 311 which I was going to take, but a review urged me to want to take the class.",
+\item "Lastly, seeing all of the opportunities available reminded me that I don't need to learn these things on my own--that there are tons of people at this University who are learning as well as can help me learn. Seeing all the opportunities on RadGrad has definitely made me feel a lot better and motivated to learn Computer Science.",
+\item "Looking at RadGrad, knowing I'm not the best person at Computer Science, makes me feel less anxious about my possible future in the job field.",
+\item "Going through and exploring the RadGrad page has made me become more interested in computer science and what the cs major actually does."
+\end{itemize}
+
+\subsubsection{RadGrad helps create communities of practice.} Approximately 30\% of the essays contained text that supported this assertion. As noted above, communities of practice can be a key driver for engagement and retention of women and under-represented groups. Some excerpts supporting this assertion are:
+
+\begin{itemize}[leftmargin=*]
+\item "Personally, I found the idea of discovering others with similar interests the most useful. I feel the most trouble I have is with networking and it was really cool to see some people I've seen in my classes with similar interests.",
+\item "I always wanted to join a certain community and develop interaction skills with like-minded students. RadGrad provides me a various of communities that I can join and it makes a lot easier to see what community is the best fit for me.",
+\item "Knowing that other people have similar interests and career focus as you creates a tightly knitted community."
+\end{itemize}
+
+\subsubsection{I will use RadGrad in future.}  Only 22\% of the essays were explicit that the author intended to use RadGrad in the future, even though 76\% of the essays were explicit that RadGrad was useful!  This may indicate the need that some additional incentives might be needed if RadGrad is to be used by significant numbers of students more than once. Some excerpts supporting this assertion are:
+
+\begin{itemize}[leftmargin=*]
+\item "I am 100\% going to use this resource sometime in the future",
+\item "Knowing how helpful RadGrad can be now, I plan on using it for the rest of my attendance at [school]",
+\item "I plan on using RadGrad regularly throughout my pursuit into the Software Engineer field.",
+\item "I really hope to utilize RadGrad throughout my college career because it really is an amazing tool.".
+\end{itemize}
+
+\subsubsection{RadGrad is well-designed and easy to use.}  Approximately 19\% of the essays commented positively on the ease-of-use of RadGrad.
+Some excerpts supporting this assertion are:
+
+\begin{itemize}[leftmargin=*]
+\item "I was surprised how easy RadGrad was to use. The design of it was very pleasing to the eye and easy to navigate. I also believe trying to rack up ICE points makes the experience a lot more enjoyable. Unlike other websites, I had an easy time understanding what each function did.",
+\item "The design of the RadGrad site is visually appealing and the tutorial for completing a basic profile was easy to understand. The descriptions for the different topics of interest, career choices, ICS catalog courses, and opportunities were also well written.",
+\item "I also like that the careers, interests, and courses all relate to each other and show a sort of ‘trajectory’, like showing what courses can apply to what interests and what interests apply to what careers.",
+\item "With some more features I think this platform could be rolled out to other universities. While it might not be the intent, I think many university’s especially smaller ones could benefit.",
+\item "I really enjoyed the snappy and stateful structure of the app, and the layout was pleasing and simple enough for easy navigation.", "I'm really liking the styling you guys have done with RadGrad. Clean font and color palette. I also really like how convenient it is that it is connected to the [university] system so I don't need to go through the hassle and make an account before using RadGrad. The "What's New" section is really handy. This way if a new class or opportunity comes up then we'll be able to know."
+\item "The RadGrad interface is very satisfying. It is intuitive, leaving little room for guessing or confusion."
+\end{itemize}
+
+However, there were a handful of negative comments regarding usability as well:
+\begin{itemize}[leftmargin=*]
+\item "It was hard to navigate around the site, the features were not very intuitive, and overall I just didn’t find myself getting much value from the application.",
+\item "The RadGrad website seems a little clunky and cluttered. A lot of information is thrown to a new user and it can get confusing to follow."
+\end{itemize}
+
+\subsubsection{The game mechanics (ICE Points, Levels) are useful.} Just over 30\% of essays commented positively on RadGrad's use of game mechanics.  Some excerpts supporting this assertion are:
+\begin{itemize}[leftmargin=*]
+\item "One more thing I found very intriguing is the innovation, competency, and experience levels. The fact that RadGrad is pushing students to push themselves in all aspects of computer science is very awesome to me."
+\item "The most unique thing about RadGrad is the ICE point system. It stands for Innovation, Competency, and Experience. It keeps track of the amount of points acquired from completed courses and opportunities. This is a useful system that helps students know what should be focused as they progress forward."
+\item "I can feel my own growth with the increase in number(competency) which prevents me from developing imposter syndrome."
+\item "RadGrad also offers a cool feature where there is a 'level' system where it showcases a student's level, and there are six levels in total for RadGrad...The level system that RadGrad has implemented can motivate and inspire students to continue to do well in their courses and in their extra-curricular activities."
+\end{itemize}
+
+\subsubsection{There are interactions between STAR and RadGrad.} The university's course registration system is called "STAR", which includes a degree planning mechanism. The essays revealed a spectrum of opinions regarding the interaction between RadGrad's degree planning environment and STAR's.  For example:
+\begin{itemize}[leftmargin=*]
+\item "It has very similar functionality like Star except that it is more focus and oriented for ICS students. It has a lot of features I wish Star had. So, its presence is needed and justified. But at the same time, I wish I didn’t need to log into a separate website to use its tools.... My only wish is that Star would implement the same type of features that Radgrad has."
+\item "A planner that is 50000000x better than STAR is super awesome."
+\item "RadGrad is a convoluted version of STAR."
+\end{itemize}
+
+\subsubsection{RadGrad provides useful information for women and/or underrepresented groups.} Unfortunately, explicit support for this assertion occurred in only 3\% of the essays. This is perhaps not surprising, given that we did not direct students to comment on this issue and it might not be top-of-mind for most of them. That said, there were a few comments supporting this assertion:
+
+\begin{itemize}[leftmargin=*]
+\item "I was also happy to see the Society of Women Engineers, as this industry is quite male-dominated and organizations like these are making the IT industry much less intimidating for women and encouraging them to partake."
+\item I did not realize the number of opportunities [this institution] offered for women and minorities. I am particularly interested in the Society of Women Engineers. This is my first year and I haven't had many opportunities to meet like-minded individuals with similar interests.
+\item "A club I will be joining is the SWITCH-UHM club. The club supports women in Information, technology and computing at the university and I never knew it existed before. I think it is important to be surrounded by people that support you and encourage you and I think it even more important to be around people that may be in the same situation such as the same CS classes... I look forward to joining this club and to meeting and making friends that are also fellow computer science chicas."
+\item "Being a Computer Science major and a female I am already stressing out with making sure I am learning my material and proving that I am able to hold my own. However, with Radgrad I am able to feel a weight lifted off my shoulders knowing I have the resources I need to potentially succeed after graduation."
+\end{itemize}
 
 \section{Discussion}
 

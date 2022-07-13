@@ -4,17 +4,12 @@
 
 Next Steps:
 * Findings section
-  * New Students 
-    * Descriptive Statistics on Essays
-    * Coding results
-      * Inter-rater reliability.
-      * Coding Categories.
-      * Results by category, including quotes.
+    * Graduating students
+      * Descriptive statistics on questionnaire answers.
+      * Example comments
+    * Faculty
+    * Advisors
     * Behavioral instrumentation
-  * Graduating students
-    * Descriptive statistics on questionnaire answers.
-    * Example comments
-  * Repeat for Faculty, Advisors
 
 * Discussion section
   * 111 students aren't necessarily CS majors, which could account for large numbers of Level 1.
@@ -22,14 +17,6 @@ Next Steps:
 Related work
   * Integrate other paper citations
   * Cal NERDS
-
-Re-code more ratings:
-* https://www.radgrad.org/docs/evaluation/overview
-* ICS 111, F21 (Philip, *Cam)
-* ICS 111, S22  (Cam, Philip)
-* ICS 211 S22 (Seungoh, Philip)
-* ICS 314 F21 (Peter, Philip)
-* ICS 314 S22 (Philip, *Cam)
 
 Review submission guidelines: 
   * anonymization: https://dl.acm.org/journal/toce/author-guidelines
