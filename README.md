@@ -2,10 +2,19 @@
 
 ## To Do
 
-Findings section
-  * Behavioral instrumentation
+Discussion
+  * Revisit the research questions.
+  * Revisit the theory of change.
+  * Revisit the curriculum vs. volunteer thing from beginning.
 
-Refer to "STAR" consistently.
+Future directions
+
+Behavioral instrumentation
+
+Directions to PIs
+* Paper
+* Template
+* Need refs
 
 Discussion section
   * 111 students aren't necessarily CS majors, which could account for large numbers of Level 1.

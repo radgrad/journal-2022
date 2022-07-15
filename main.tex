@@ -5,6 +5,7 @@
 \usepackage{subcaption}
 \usepackage[T1]{fontenc}
 \usepackage{enumitem}
+\usepackage{bbding}
 
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08emT\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \acmYear{2022} \acmVolume{1} \acmNumber{1} \acmArticle{1} \acmMonth{1}
@@ -57,13 +58,13 @@ RadGrad is a curriculum initiative implemented via an application that combines 
 Our evaluation study involved four major stakeholder groups for undergraduate computer science education at our institution: students in the early stages of the degree program, recent graduates, faculty, and advisors.
 
 \AbstractCategory{Study Methods}
-We used a qualitative experimental research design, including data obtained through questionnaire responses from our major stakeholder group as well as data from system instrumentation.
+We used a qualitative experimental research design, including data obtained through questionnaire responses from our major stakeholder groups.
 
 \AbstractCategory{Findings}
-We found strong evidence to support the hypothesis that RadGrad can have a positive impact on student engagement in Computer Science for students who are relatively new to the discipline. We found some evidence to support the hypothesis that RadGrad can have a positive impact on student diversity. We were unable to evaluate the impact of RadGrad on retention.
+We found strong evidence to support the hypothesis that RadGrad can have a positive impact on student engagement in Computer Science for students who are relatively new to the discipline. We found some evidence to support the hypothesis that RadGrad can have a positive impact on student retention. We were unable to evaluate the impact of RadGrad on diversity.
 
 \AbstractCategory{Conclusions}
-The data gathered in this study indicates that approaches like RadGrad provide a promising means to improve engagement, diversity, and (potentially) retention in Computer Science.  The data suggests that development and evaluation of RadGrad at other institutions and/or in other STEM disciplines would provide useful insight into the generality of the approach. It also indicates that faculty engagement with the technology would increase its effectiveness, but that obtaining faculty buy-in is challenging.
+The data gathered in this study indicates that approaches like RadGrad provide a promising means to improve engagement, retention, and (potentially) diversity in Computer Science.  The data suggests that development and evaluation of RadGrad at other institutions and/or in other STEM disciplines would provide useful insight into the generality of the approach. It also indicates that faculty engagement with the technology might increase its effectiveness, but that obtaining faculty buy-in is challenging.
 
 \end{abstract}
 
@@ -93,8 +94,6 @@ The data gathered in this study indicates that approaches like RadGrad provide a
 
 \subsection{Research Problem}
 
-{\em\small Frame the problem or question and its context. Review, critique, and synthesize the applicable literature to identify key issues/debates/theoretical frameworks in the relevant literature to clarify barriers, knowledge gaps, or practical needs.}
-
 Traditional curriculum initiatives for undergraduate computer science generally fall into one of three categories. The first involves the injection of a specific technology across the curriculum, such as initiatives for cloud computing \cite{deb_module-based_2019}. The second involves the injection of a specific domain across the curriculum, such as initiatives for cybersecurity \cite{tang_shaping_2019} or distributed computing \cite{abebe_watdfs:_2019}. The third involves the integration of practices intended to address demographic problems including lack of access or diversity, such as initiatives at the University of Illinois \cite{metcalf_diversity_2018} and University of Oklahoma \cite{collain_you_2019}.
 
 One problem with these types of curriculum initiatives is that they all require changing, well, the curriculum.  This is a problem because changing the curriculum is hard: any significant curriculum change will require the approval of committees at multiple levels of the educational institution, it will require buy-in across the faculty, and it will often require significant resources to implement and sustain.
@@ -114,7 +113,6 @@ To combat the view of extracurricular activities being perceived as "extra", Rad
 Unlike traditional curriculum initiatives, RadGrad exists apart from the official curriculum requirements for our degree programs. As a result, we have been free to deploy and experiment with the approach without the multi-year approval process normally required for curriculum changes.  On the down-side, participation in RadGrad is voluntary, and so students must opt in to the system and its philosophy to gain its benefits.
 
 \subsection{Research Goals}
-{\em\small State the purpose(s)/goal(s)/aim(s) of the study. State the target audience, if specific. Provide the rationale for fit of design used to investigate this purpose/goal (e.g., theory building, explanatory, developing understanding, social action, description, highlighting social practices). Describe the approach to inquiry, if it illuminates the objectives and research rationale (e.g., descriptive, interpretive, feminist, psychoanalytic, postpositivist, critical, postmodern, constructivist, or pragmatic approaches).}
 
 RadGrad began in the Fall of 2015 as a student-driven project in several upper-division software development courses.  A common perspective from students working on the project at that time was, "I wish I'd had RadGrad when I was starting out in Computer Science".  However, most of these students were high achieving, soon-to-graduate individuals who were demonstrating an ability to successfully finish a computer science degree program without the aid of RadGrad.  While we found their feedback to be encouraging, we wanted to know whether RadGrad would be interesting and/or useful to students who were more "at risk" in our program. Ideally, we wanted to know if the insights that RadGrad provides regarding the spectrum of computer science careers as well as extracurricular opportunities in the discipline both during and after the degree program would lead to a more diverse and engaged student body, with less attrition over the course of the degree program.
 
@@ -279,12 +277,31 @@ This design was not feasible for several reasons: pilot study responses to RadGr
 
 To both fit the constraints of our situation and still obtain useful data, we instead designed and implemented a qualitative case study. Our approach involved gathering a variety of data in a variety of formats from four stakeholder groups during Academic Year 2021-2022: (a) students in the early stages of their degree program, just after completing the onboarding experience ("Early Stage Students"); (b) students who had just completed (or were just about to complete) the degree program ("Recent Grads"); (c) faculty members ("Faculty"); and (d) student advisors ("Advisors").
 
-Figure \ref{fig:eval-questions} summarizes how our "top-level" research questions (the impact of RadGrad on engagement, retention, and diversity) relates to the questions for which we actually gathered data.
+Figure \ref{fig:eval-questions} summarizes how our "high-level" research questions (the impact of RadGrad on engagement, retention, and diversity) relates to the "low-level" questions for which we actually gathered data. A "?" in a cell indicates that the data regarding that low-level question might provide insight into the high-level question.
 
-\begin{figure}[t]
+\begin{figure}[th]
 \centering
-\includegraphics[width=\linewidth]{images/research-questions.eps}
-\caption{\em Research questions and the case study evaluation data results that provide evidence regarding them. }
+\small
+\begin{tabular}{ p{1in} p{1in} c c c }
+\hline
+\multicolumn{2}{l}{Does RadGrad have a positive impact on...} & Engagement? & Retention? & Diversity? \\
+\hline\\[0.05cm]
+Are the following features useful... & &  &  & \\
+\multicolumn{2}{r}{Explorers?} & ? & ? & \\
+\multicolumn{2}{r}{Degree Planner?} & ? & ? & \\
+\multicolumn{2}{r}{Game Mechanics?} & ? &  & \\
+\multicolumn{2}{r}{Reviews?} & ? & ? & \\[0.5cm]
+RadGrad is... & &  &  & \\
+\multicolumn{2}{r}{well designed?} & ? &  & \\
+\multicolumn{2}{r}{useful for women and underrepresented groups?} &  & ? & ? \\
+\multicolumn{2}{r}{helpful for creating communities of practice?} & ? & ? & ? \\
+\multicolumn{2}{r}{helpful for broadening student perspectives on CS?} & ? & ? & ? \\
+\multicolumn{2}{r}{useful for faculty?} & ? & ? & \\
+\multicolumn{2}{r}{useful for advisors?} & ? & ? & \\
+\hline
+\end{tabular}
+\caption{\em Research questions and the case study evaluation data that provide evidence regarding them.}
+\normalsize
 \label{fig:eval-questions}
 \end{figure}
 
@@ -364,6 +381,7 @@ Figure \ref{fig:essay-stats} also provides descriptive statistics regarding the 
 
 \begin{figure}[th]
 \centering
+\small
 \begin{tabular}{ l c c c | c c c c}
 \hline
  Class & Total Students & Responses & Percentage & Min & Max & Ave & Median \\
@@ -378,6 +396,7 @@ Total & 475 & 187 & 39\% & 22 & 877 & 266 & 224\\
 \hline
 \end{tabular}
 \caption{\em Essay Statistics. Min, Max, Average, and Median refer to the number of words in the essay.}
+\normalsize
 \label{fig:essay-stats}
 \end{figure}
 
@@ -416,7 +435,7 @@ for women and/or underrepresented groups.             & 6 & 3\% \\
 \subsubsection{RadGrad provides useful information.} This is a kind of "aggregate" category, in that if an essay writer indicated that a specific RadGrad feature (Explorer, Degree Planner, Reviews, etc) was useful, then we infer that they also find RadGrad in general to be useful. As a result, we find that approximately three out of four essays included text that supported the assertion that RadGrad provides useful information. Here is an example excerpt that touches on many of the features:
 
 \begin{itemize}[leftmargin=*]
-\item "After spending about an hour going through RadGrad, I learned a lot more about courses, opportunities, and possible career interests. These are all things I hear older people talking about, but I never spend a lot of time thinking about them myself. I just let [the system registration system] tell me what classes to take, say I’ll think about opportunities later, and tell people I don’t know what I want to do in the future. RadGrad forced me to actually think about the classes I’m going to be taking. RadGrad also showed me opportunities available to me and made me choose some. RadGrad also made me choose computer science related jobs and see what common interests they share. Overall, in the hour or two I spent working on my RadGrad profile, I learned a lot about future classes, opportunities I can take advantage of, and several possible career choices."
+\item "After spending about an hour going through RadGrad, I learned a lot more about courses, opportunities, and possible career interests. These are all things I hear older people talking about, but I never spend a lot of time thinking about them myself. I just let STAR tell me what classes to take, say I’ll think about opportunities later, and tell people I don’t know what I want to do in the future. RadGrad forced me to actually think about the classes I’m going to be taking. RadGrad also showed me opportunities available to me and made me choose some. RadGrad also made me choose computer science related jobs and see what common interests they share. Overall, in the hour or two I spent working on my RadGrad profile, I learned a lot about future classes, opportunities I can take advantage of, and several possible career choices."
 \end{itemize}
 
 \subsubsection{RadGrad Explorers are useful.} RadGrad includes four "explorers", all of which were mentioned frequently in essays. The Opportunity (i.e. extra-curricular activity) Explorer was mentioned in 75\% of the essays, the Course Explorer in 63\%, the Career Goals Explorer in 51\%, and the Interests Explorer in 36\%. Some excerpts supporting this assertion are:
@@ -492,7 +511,7 @@ However, there were a handful of negative comments regarding usability as well:
 
 \subsubsection{There are interactions between STAR and RadGrad.} The university's course registration system is called "STAR", which includes a degree planning mechanism. The essays revealed a spectrum of opinions regarding the interaction between RadGrad's degree planning environment and STAR's.  For example:
 \begin{itemize}[leftmargin=*]
-\item "It has very similar functionality like Star except that it is more focus and oriented for ICS students. It has a lot of features I wish Star had. So, its presence is needed and justified. But at the same time, I wish I didn’t need to log into a separate website to use its tools.... My only wish is that Star would implement the same type of features that Radgrad has."
+\item "It has very similar functionality like STAR except that it is more focus and oriented for ICS students. It has a lot of features I wish STAR had. So, its presence is needed and justified. But at the same time, I wish I didn’t need to log into a separate website to use its tools.... My only wish is that STAR would implement the same type of features that Radgrad has."
 \item "A planner that is 50000000x better than STAR is super awesome."
 \item "RadGrad is a convoluted version of STAR."
 \end{itemize}
@@ -616,8 +635,43 @@ The questionnaire also produced some interesting comments on RadGrad from the Ad
 \end{itemize}
 
 
+\subsection{Summary}
 
+Figure \ref{fig:eval-questions-evidence} summarizes our findings by revisiting Figure \ref{fig:eval-questions}, this time providing a checkmark if the data appears to support the low-level research question, a question mark if the data does not provide evidence one way or another, and an X if the data appears to disconfirm the question.
 
+\begin{figure}[th]
+\centering
+\small
+\begin{tabular}{ p{1in} p{1in} c c c }
+\hline
+\multicolumn{2}{l}{Does RadGrad have a positive impact on...} & Engagement? & Retention? & Diversity? \\
+\hline\\[0.05cm]
+Are the following features useful... & &  &  & \\
+\multicolumn{2}{r}{Explorers?} & \Checkmark & \Checkmark & \\
+\multicolumn{2}{r}{Degree Planner?} & \Checkmark & \Checkmark & \\
+\multicolumn{2}{r}{Game Mechanics?} & \Checkmark &  & \\
+\multicolumn{2}{r}{Reviews?} & \Checkmark & \Checkmark & \\[0.5cm]
+RadGrad is... & &  &  & \\
+\multicolumn{2}{r}{well designed?} & \Checkmark &  & \\
+\multicolumn{2}{r}{useful for women and underrepresented groups?} &  & ? & ? \\
+\multicolumn{2}{r}{helpful for creating communities of practice?} & \Checkmark & \Checkmark & \Checkmark \\
+\multicolumn{2}{r}{helpful for broadening student perspectives on CS?} & \Checkmark & \Checkmark & \Checkmark \\
+\multicolumn{2}{r}{useful for faculty?} & X & X & \\
+\multicolumn{2}{r}{useful for advisors?} & \Checkmark & \Checkmark & \\
+\hline
+\end{tabular}
+\caption{\em Summary of findings: a "\Checkmark" indicates that data supported the low-level question; a "?" indicates the data did not provide evidence one way or the other, and an "X" indicates the data disconfirmed the low-level question.}
+\normalsize
+\label{fig:eval-questions-evidence}
+\end{figure}
+
+In general, our findings provided evidence to support the usefulness of all of the basic RadGrad features: Explorers, Degree Planner, Game Mechanics, and Reviews.  We found evidence that RadGrad is well designed, that it can help create communities of practice, and that it helps broaden student perspectives on computer science.  Both Advisors found RadGrad to be useful.
+
+However, our data did not provide enough evidence to conclude that RadGrad is useful for women and underrepresented groups. We found evidence for this in only three essays, which we do not believe is sufficient for a conclusion. Thus, we leave this question as an open question.
+
+We found disconfirming evidence that RadGrad is useful for Faculty, at least in the Department we studied for the time period of the study. Very few faculty engaged with the system, and despite the presence of a tutorial, very few seemed to understand or care about the importance of faculty engagement with RadGrad.
+
+Finally, we believe the data for our low-level research questions provides fairly strong evidence that RadGrad can have a positive impact on engagement.  It provides somewhat less strong evidence that RadGrad can have a positive impact on retention.  It provides some indirect evidence that RadGrad can have a positive impact on diversity, since prior research shows that diversity efforts are more successful when there exist communities of practice and an understanding of the broader impacts of the discipline. We did not, however, obtain direct evidence for the positive impact of RadGrad on diversity.
 
 \section{Discussion}
 
