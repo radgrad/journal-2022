@@ -3,8 +3,6 @@
 ## To Do
 
 Findings section
-  * Faculty
-  * Advisors
   * Behavioral instrumentation
 
 Refer to "STAR" consistently.
