@@ -1,31 +1,18 @@
 # RadGrad 2022 Journal Article
 
-## To Do
-
 Discussion
-  * Revisit the research questions.
   * Revisit the theory of change.
-  * Revisit the curriculum vs. volunteer thing from beginning.
 
-Future directions
+Behavioral instrumentation?
 
-Behavioral instrumentation
-
-Directions to PIs
-* Paper
-* Template
-* Need refs
-
-Discussion section
-  * 111 students aren't necessarily CS majors, which could account for large numbers of Level 1.
-
-Related work
+Related work:
   * Integrate other paper citations
   * Cal NERDS
 
 Review submission guidelines: 
   * anonymization: https://dl.acm.org/journal/toce/author-guidelines
-  * Page limit: 15-25
+  * Remove authors!
+
 
 ## Image conversion
 
