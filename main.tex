@@ -96,7 +96,7 @@ The data gathered in this study indicates that approaches like RadGrad provide a
 
 Traditional curriculum initiatives for undergraduate computer science generally fall into one of three categories. The first involves the injection of a specific technology across the curriculum, such as initiatives for cloud computing \cite{deb_module-based_2019}. The second involves the injection of a specific domain across the curriculum, such as initiatives for cybersecurity \cite{tang_shaping_2019} or distributed computing \cite{abebe_watdfs:_2019}. The third involves the integration of practices intended to address demographic problems including lack of access or diversity, such as initiatives at the University of Illinois \cite{metcalf_diversity_2018} and University of Oklahoma \cite{collain_you_2019}.
 
-One problem with these types of curriculum initiatives is that they all require changing, well, the curriculum.  This is a problem because changing the curriculum is hard: any significant curriculum change will require the approval of committees at multiple levels of the educational institution, it will require buy-in across the faculty, and it will often require significant resources to implement and sustain.
+One problem with these types of curriculum initiatives is that they all require changing, well, the curriculum.  This is a problem because changing the curriculum is hard. That is, curriculum changes can present challenges for both academics and their communities for several reasons, such as resisting strong top-down control and seeking meaningful justifications for changes \cite{annala_understanding_2021}. In addition any significant curriculum change will require the approval of committees at multiple levels of the educational institution, it will require buy-in across the faculty, and it will often require significant resources to implement and sustain.
 
 A benefit of changing the curriculum is that if it is accomplished, then {\em student} buy-in is normally not required. Because the change is to the curriculum, if a student wants to graduate, then they must follow the changed curriculum.
 
@@ -104,7 +104,7 @@ At our University, we have been experimenting with an initiative called "RadGrad
 
 RadGrad originally rose from two insights: first, a recognition that our department did not have the resources to enable its undergraduate curriculum to keep up with the rate of change in computer science technology and the ever widening domain of application areas, nor could we keep up with student demand for access to curriculum content.  In some cases, the local high tech community or online educational services could fill in the gaps, but our department provided no support for student awareness of these extracurricular resources, or guidance as to which ones were worth spending time on, or how such activities might integrate with existing curricular offerings.  Finally, since extracurricular activities, are, by definition, "extra", there is a structural incentive for students to limit these activities and instead focus on curricular work which directly affects their GPA.
 
-Second, we recognized that the increase in demand for our undergraduate computer science degree programs was paradoxically leading to a decrease in the diversity of our student body. Increasingly few women and underrepresented groups were making it all the way through our program to graduation. Although approximately 40\% of our first year students each year are women, only 23\% of our graduating seniors in AY 2021 were women.
+Second, we recognized that the increase in demand for our undergraduate computer science degree programs was paradoxically leading to a decrease in the diversity of our student body. For example, the representation of women in computer science is low in the United States and has been declining over the past few decades \cite{moudgalya_computer_2019}. According to the U.S Department of Education \cite{us_department_of_education_digest_2019}, the percentage share of BS degrees earned by women is approximately 20\% in 2018-2019, which is down from over 35\% in early 1980s. These statistics are also similar to our program. That is, increasingly few women and underrepresented groups were making it all the way through our program to graduation. Although approximately 40\% of our first year students each year are women, only 23\% of our graduating seniors in AY 2021 were women.
 
 In an attempt to address these issues, we created RadGrad, which is a web-based application that combines features of social networks, degree planners, and serious games.  Undergraduate students in our introductory courses are provided an account on RadGrad, where they can declare their interests and career goals. The system then recommends courses and extracurricular opportunities matching their preferences. A degree planner tool enables students to lay out their "degree experience" as a combination of curricular activities (courses) and extracurricular activities (internships, meetups, online courses, hackathons, etc) for each upcoming semester until their planned graduation date. Finally, RadGrad enables students to learn about the broader ways in which computer science impacts upon local, national, and global society, as well as helping them to connect with and create communities of practice inside and outside of the department. As will be discussed below, related research suggests that making these connections can improve student engagement, diversity, and retention.
 
@@ -120,12 +120,13 @@ Unfortunately, there have been a multitude of impacts on our computer science de
 
 More specifically, during Academic Year 2021-2022, we conducted a qualitative case study that was designed to provide evidence regarding the following research questions:
 
-\begin{itemize}
-\item Do students, when introduced to RadGrad, find it of value to their educational experience?
-\item Do students, after completing their degree program, view RadGrad as having improved their educational experience?
-\item What are the views of Faculty and Advising staff regarding RadGrad/
+\begin{enumerate}
+\item Do early stage students, when introduced to RadGrad, find it of value to their educational experience?
+\item Do recent graduates, having just completed the degree program, view RadGrad as having improved their educational experience?
+\item What are the views of Faculty regarding RadGrad?
+\item What are the views of Advising staff regarding RadGrad?
 \item What do these findings imply regarding engagement, diversity, and retention in computer science undergraduate degree programs?
-\end{itemize}
+\end{enumerate}
 
 We report on this study starting in Section \ref{sec:method}. First, however, we step back to better motivate the design of RadGrad, as well as describe the system in more detail.
 
@@ -138,9 +139,9 @@ While the need is clear, solutions are complicated. Gender diversity in computer
 
 For those high school students who graduate and enter an undergraduate degree program in computer science, retention becomes a significant issue.   More than half of the students who start out in science or engineering switch to other majors or do not finish college at all \cite{kober_reaching_2015}. Initiatives to improve retention, such as the Threads undergraduate curriculum at Georgia Tech, emphasize giving students more control over their degree plan, a better understanding of how their studies relate to their career interests, and an increased emphasis on the importance of extracurricular activities \cite{barrett_expanding_2017}. RadGrad provides a technology platform, information system, and incentive structure with these emphases.
 
-Communities of Practice (CoP) is a theory of learning first proposed in 1991 \cite{lave_situated_1991}, more fully developed in 1998 \cite{wenger_communities_1998}, and extended to "landscapes of practice" in 2004 \cite{wenger_learning_2004}. A loose definition of Communities of Practice is "groups of people who share a concern or a passion for something they do and learn how to do it better as they interact regularly." More specifically, three characteristics distinguish a community of practice from other kinds of communities: (1) There is at least one domain of interest shared by all members; (2) members engage in joint activities and discussions, help each other, and share information;  and (3) members are practitioners in the domain, not just people with shared interests, and thus develop a shared repertoire of resources.
+Communities of Practice (CoP) is a theory of learning first proposed in 1991 \cite{lave_situated_1991}, more fully developed in 1998 \cite{wenger_communities_1998}, and extended to "landscapes of practice" in 2004 \cite{wenger_learning_2004}. A loose definition of CoP is "groups of people who share a concern or a passion for something they do and learn how to do it better as they interact regularly." More specifically, three characteristics distinguish a CoP from other kinds of communities: (1) There is at least one domain of interest shared by all members; (2) members engage in joint activities and discussions, help each other, and share information;  and (3) members are practitioners in the domain, not just people with shared interests, and thus develop a shared repertoire of resources.
 
-Communities of Practice show great promise for improving undergraduate retention and diversity, because participating students will find a new source for social encouragement, self-perception, academic exposure, and career perception. In undergraduate degree programs, CoPs are primarily found within disciplinary-specific extracurricular activities: clubs, meetups, hackathons, and so forth. RadGrad makes these CoPs visible to students, and provides incentives to students for participating in them.
+Communities of Practice show great promise for improving undergraduate retention \cite{barker_results_2014} and diversity \cite{gardner_authentic_2015}, because participating students will find a new source for social encouragement, self-perception, academic exposure, and career perception. In undergraduate degree programs, CoPs are primarily found within disciplinary-specific extracurricular activities: clubs, meetups, hackathons, and so forth. RadGrad makes these CoPs visible to students, and provides incentives to students for participating in them.
 
 \section{RadGrad}
 \label{sec:radgrad}
@@ -160,9 +161,9 @@ These experiences have helped us understand the "workflow" of RadGrad, and how i
 
 We find that many students in the {\em Pre-RadGrad} phase have a narrow, stereotyped view of computer science as a discipline (i.e. "it's only about video games") and the students who pursue the major (i.e. "introverted, anti-social white or asian male gamers").
 
-The {\em Onboarding} phase represents the first exposure of students to RadGrad, and hopefully occurs by the time of their first or second semesters in the degree program. Each RadGrad instance is invitation-only, so an administrator must run scripts to create accounts and upload data on completed degree program coursework. Once registered, students login to the system using their institutional authentication mechanism. We provide an online tutorial \cite{johnson_radgrad_2022} that students can follow to familiarize themselves with the system, which teaches them how to select an initial set of Career Goals, Interests, Courses, and Opportunities that they find of interest. RadGrad provides a recommendation system so that once students select Career Goals and Interests, the system can bring related Courses and Opportunities to their attention.  The anticipated outcome of the Onboarding process is an increased awareness of the range of disciplinary pursuits, along with concrete activities to pursue to actively explore them.
+The {\em Onboarding} phase represents the first exposure of students to RadGrad, and hopefully occurs by the time of their first or second semesters in the degree program. Each RadGrad instance is invitation-only, so an administrator must run scripts to create accounts and upload data on completed degree program coursework. Once registered, students login to the system using their institutional authentication mechanism. We provide an online tutorial that students can follow to familiarize themselves with the system, which teaches them how to select an initial set of Career Goals, Interests, Courses, and Opportunities that they find of interest. RadGrad provides a recommendation system so that once students select Career Goals and Interests, the system can bring related Courses and Opportunities to their attention.  The anticipated outcome of the Onboarding process is an increased awareness of the range of disciplinary pursuits, along with concrete activities to pursue to actively explore them.
 
-The {\em Degree Program Use} phase represents the remainder of the student's degree program, in which they can refer back to RadGrad for new Career Goals and Interests and how they relate to new Courses and Opportunities. RadGrad also includes a Review system that enables students to read about the experiences of other students with Courses and Opportunities. Unlike conventional online systems (like "Rate My Professor"), RadGrad Reviews are not anonymous and are subject to moderation; these two features encourage high quality, thoughtful reviews.  The most important goal during Degree Program Use is for students to actually take part in Opportunities, which will connect them with Communities of Practice (both on or off-campus) in a particular disciplinary area. RadGrad provides two game mechanics (myICE Points and Levels) for students who are motivated by those kinds of things.
+The {\em Degree Program Use} phase represents the remainder of the student's degree program, in which they can refer back to RadGrad for new Career Goals and Interests and how they relate to new Courses and Opportunities. RadGrad also includes a Review system that enables students to read about the experiences of other students with Courses and Opportunities. Unlike conventional online systems (like "Rate My Professor"), RadGrad Reviews are not anonymous and are subject to moderation; these two features encourage high quality, thoughtful reviews.  The most important goal during Degree Program Use is for students to actually take part in Opportunities, which will connect them with communities of practice (both on or off-campus) in a particular disciplinary area. RadGrad provides two game mechanics (myICE Points and Levels) for students who are motivated by those kinds of things.
 
 The {\em After Graduation} phase represents the state of affairs shortly after matriculation.  Our theory of change predicts that students who have taken part in RadGrad will have been more engaged with a wider variety of disciplinary activities occurring both on and off campus, and that those experiences will help them successfully enter into a fulfilling professional position. Once a student graduates, a RadGrad administrator changes their role to "Alumni", which currently converts their account to read-only status.
 
@@ -196,13 +197,13 @@ It is straightforward to search the Internet for "Computer Science Careers" (for
 \begin{figure}[ht]
 \centering
 \includegraphics[width=\linewidth]{images/data-scientist-detail.eps}
-\caption{\em RadGrad Data Scientist Details Page}
+\caption{\em RadGrad Data Scientist Details Page. (Student names are pseudonyms.))}
 \label{fig:radgrad-data-scientist-detail}
 \end{figure}
 
 This page shows that for this (hypothetical) student user, (a) they have added Data Scientist to their profile as a Career Goal; (b) Of the five Interests associated with the Data Scientist Career Goal, the student has two of them in their profile (Algorithms and Databases); (c) The student has completed six Courses related to Data Science already; (d) The student has already completed three Opportunities related to Data Scientist, has one upcoming, and there are quite a few more related Opportunities that could be added to their plan; (e) Six students in this community have Data Scientist in their profile (and have opted in to make this information visible to other registered users), and (f) six faculty have listed Data Scientist as a Career Goal for which they could provide advice and guidance.  All of this information is in addition to a brief profile of the Career Goal along with a "Day in the Life" video.
 
-It is important to note that RadGrad content is "faculty-curated".  It is the responsibility of one or more faculty in the discipline at the institution to determine what constitutes relevant Career Goals, Interests, and Opportunities for their students, and how these items are documented in the system. There is no central authority decreeing content. This enables a RadGrad instance to be appropriately tailored to the educational context, but implies faculty participation.
+It is important to note that RadGrad content is designed to be "faculty-curated".  It is the responsibility of one or more faculty in the discipline at the institution to determine what constitutes relevant Career Goals, Interests, and Opportunities for their students, and how these items are documented in the system. There is no central authority decreeing content for all instances of RadGrad. This design enables a RadGrad instance to be appropriately tailored to the educational context, but implies ongoing faculty participation in content development.
 
 \subsubsection{The Degree Plan Page}
 
@@ -226,7 +227,7 @@ So far, we've presented a design that enables students to peruse faculty-curated
 But there's two significant issues:
 \begin{enumerate}
 \item Sure, the more courses and experiences one has, the better, but can we do better? Can we help students to understand what is "enough"?
-\item Does this just dump more "work" on students? Can we inject a little fun into the process?
+\item Does RadGrad just dump more "work" on students? Can we inject a little fun into the process?
 \end{enumerate}
 
 We designed two game mechanics, myICE points and Levels, to address these issues.  myICE points provide a way for students to "complete" a degree plan, in the sense that if they complete all of the Courses and Opportunities in a complete degree plan, they will be both "well prepared" and "well rounded".  Levels provide a graphical illustration for a student's progress through the degree program. Figure \ref{fig:ice} shows the portion of the navigation bar containing both the student's Level (in this case, Level 3, represented by a green RadGrad icon) and their current myICE Points (three circles containing the numbers 10, 74, and 10).
@@ -244,7 +245,7 @@ In addition to defining and describing the set of Opportunities in a RadGrad ins
 
 The goal is to assign points such that students who have earned 100 Innovation, 100 Competency, and 100 Experience points would be considered both "well rounded" and "well prepared" upon graduation.  While this point system is very heuristic in nature, it is still more descriptive, and prescriptive, than the only institutional metric currently available to students: GPA.
 
-To distinguish "planned" from "earned" ICE points, RadGrad includes a verification process for both Courses and Opportunities. For Courses, RadGrad imports data from the University's course management system indicating the coursework the student has taken and the grade they received.  To verify completion of an extracurricular activity, the student must manually "request verification" of the Opportunity.  This request sends a message to a RadGrad administrator or faculty member who has responsibility for checking that the student participated. The admin or faculty member can accept or decline the verification request, and if accepted, the system will award the points associated with the Opportunity to the student.
+To distinguish "planned" from "earned" ICE points, RadGrad includes a verification process for both Courses and Opportunities. For Courses, RadGrad imports data from the University's course management system (STAR) indicating the coursework the student has taken and the grade they received.  To verify completion of an extracurricular activity, the student must manually "request verification" of the Opportunity.  This request sends a message to a RadGrad administrator or faculty member who has responsibility for checking that the student participated. The admin or faculty member can accept or decline the verification request, and if accepted, the system will award the points associated with the Opportunity to the student.
 
 RadGrad represents myICE by three circles: a green circle for Innovation, a blue circle for Competency, and a red circle for Experience. For each of the three components of myICE, the circle is partially or fully colored in a light shade to represent the number of planned points, based upon what the student has put in their degree plan. If the student has earned the points, then a dark color is used to fill in part or all of the circle. The circles only represent 100 points for each of the three metrics; it is up to faculty to define points for Courses and Opportunities such that earning 100 points suffices to indicate a well prepared and well rounded student.
 
@@ -262,7 +263,7 @@ First, we wanted a way to make RadGrad visible "in real life".  To do this, we d
 
 Second, we experimented with two different approaches to introducing students to RadGrad. Initially, we obtained permission from instructors of introductory courses to attend a class session and step students through the onboarding process (i.e. selecting an initial set of Interests and Career Goals, then adding an initial set of Courses and Opportunities to their Degree Plan).  In-class onboarding had the advantage of engaging all the students in RadGrad simultaneously, and also provided us with an opportunity to hand out RadGrad laptop stickers to everyone based on their Level at the end of the class period.  But, we found that the 30 minutes spent introducing students led to a "rushed" experience, and did not allow students to explore the system and its content at their own pace.
 
-Once COVID-19 hit, we switched to an online New Student Tutorial \cite{johnson_radgrad_2022} provided a more comprehensive introduction than our in-class presentation, and allowed students to work their way through the system at their own pace.  To incentivize students to onboard, this activity was provided as an extra credit assignment in introductory courses.  The assignment also required students to write a short essay which was used as data for this evaluation.
+Once COVID-19 hit, we switched to an online New Student Tutorial that provided a more comprehensive introduction than our in-class presentation, and allowed students to work their way through the system at their own pace.  To incentivize students to onboard, this activity was provided as an extra credit assignment in introductory courses.  The assignment also required students to write a short essay which was used as data for this evaluation.
 
 Third, we asked advisors to integrate RadGrad into the student advising sessions as a way to support longer-range career and professional goal discussions.  As we found in our evaluation, student perceptions of faculty and advisor engagement with RadGrad were important in their perception of the utility of the system.
 
@@ -309,13 +310,13 @@ Appendices \ref{sec:onboarding-student-essay-prompt}, \ref{sec:graduating-studen
 
 Instead, we asked a combination of direct questions about specific features of RadGrad (such as, "Did you find the course explorer to be useful") for graduating students, faculty, and advisors, along with an extremely open ended question for new students ("Write a 2-3 paragraph essay about RadGrad").  In the case of the open-ended essay, we then coded the essay to extract recurrent themes.
 
-This combination of qualitative data results in a rich source of insight into the RadGrad experience across the four stakeholder groups. As will be shown below, it provides indirect evidence regarding all three of our top-level research questions, as well as useful and actionable information about the RadGrad UX.
+This combination of qualitative data results in a rich source of insight into the RadGrad experience across the four stakeholder groups. As will be shown in Figure \ref{fig:eval-questions-evidence}, it provides indirect evidence regarding all three of our top-level research questions, as well as useful and actionable information about the RadGrad UX.
 
 \subsection{Study Participants}
 
 \subsubsection{Researcher Description}
 
-The research team consists of two Professors from the Department of Computer Science, and two Professors from the Department of Learning Design and Technology. The Computer Science Professors were also lead designers of the RadGrad system.
+The research team consists of two Professors from the Department of Computer Science, and two Professors from the Department of Education.
 
 \subsubsection{Participants}
 
@@ -334,9 +335,9 @@ Participants were drawn from four stakeholder groups:
 
 \subsubsection{Researcher–Participant Relationship}
 
-There were two relationships between researchers and participants that could have impacted on the data. First, the researchers who are Computer Science Professors were also instructors for several of the courses being taken by the undergraduates in the early stages of their degree program. If they were aware that the instructors were also members of the RadGrad research team, that could potentially have influenced their responses.
+There were two relationships between researchers and participants that could have impacted on the data. First, the researchers who are Computer Science Professors were also instructors for several of the courses being taken by the undergraduates in the early stages of their degree program. If students were aware that the instructors were also members of the RadGrad research team, that could potentially have influenced their responses.
 
-Second, the researchers who are Computer Science Professors are also faculty in the Computer Science department. So, there are professional and personal relationships that could potentially influence the responses.
+Second, the researchers who are Computer Science Professors are also faculty in the Computer Science department. So, there are professional and personal relationships that could potentially influence the responses of faculty to their questionnaire.
 
 \subsection{Participant Recruitment and Selection}
 \subsubsection{Recruitment Process}
@@ -365,7 +366,7 @@ We identified the {\em Advisor} stakeholder group as all of the undergraduate ad
 
 For the Recent Graduate, Faculty, and Advisor stakeholder groups, the number of responses were too small (23, 10, and 2 respectively) to apply any formal statistical analysis.  Instead, we will present descriptive statistics and summaries of any short answer responses.
 
-For the Early Stage Student stakeholder groups, we collected 187 essays, ranging in length from a short paragraph to several paragraphs. This was enough data to support a more formal analysis strategy of qualitative data coding \cite{raun_successful_2013}. In our case, we first generated a set of categories based upon our top-level research questions and preliminary review of a subset of essays, then randomly assigned each essay to two researchers to code independently. Our set of coding categories is listed in Appendix \ref{sec:coding-categories}. After each essay was coded by two researchers, we calculated Inter-Rater Reliability (IRR) for each encoding as the percentage of ratings that were in absolute agreement and found that we exceeded the "minimum standards" for reliability \cite{graham_measuring_2012} with an IRR of 79\%. We then performed a third review of codings in order to obtain a "tie-breaker" value for the percentage of essays including each coding category.
+For the Early Stage Student stakeholder groups, we collected 187 essays, ranging in length from a short paragraph to several paragraphs. This was enough data to support a more formal analysis strategy of qualitative data coding \cite{braun_successful_2013}. In our case, we first generated a set of categories based upon our top-level research questions and preliminary review of a subset of essays, then randomly assigned each essay to two researchers to code independently. Our set of coding categories is listed in Appendix \ref{sec:coding-categories}. After each essay was coded by two researchers, we calculated Inter-Rater Reliability (IRR) for each encoding as the percentage of ratings that were in absolute agreement and found that we exceeded the "minimum standards" for reliability \cite{graham_measuring_2012} with an IRR of 79\%. We then performed a third review of codings in order to obtain a "tie-breaker" value for the percentage of essays including each coding category.
 
 \section{Findings}
 
@@ -491,7 +492,9 @@ Some excerpts supporting this assertion are:
 \item "The design of the RadGrad site is visually appealing and the tutorial for completing a basic profile was easy to understand. The descriptions for the different topics of interest, career choices, ICS catalog courses, and opportunities were also well written.",
 \item "I also like that the careers, interests, and courses all relate to each other and show a sort of ‘trajectory’, like showing what courses can apply to what interests and what interests apply to what careers.",
 \item "With some more features I think this platform could be rolled out to other universities. While it might not be the intent, I think many university’s especially smaller ones could benefit.",
-\item "I really enjoyed the snappy and stateful structure of the app, and the layout was pleasing and simple enough for easy navigation.", "I'm really liking the styling you guys have done with RadGrad. Clean font and color palette. I also really like how convenient it is that it is connected to the [university] system so I don't need to go through the hassle and make an account before using RadGrad. The "What's New" section is really handy. This way if a new class or opportunity comes up then we'll be able to know."
+\item "I really enjoyed the snappy and stateful structure of the app, and the layout was pleasing and simple enough for easy navigation.",
+\item "I'm really liking the styling you guys have done with RadGrad. Clean font and color palette. I also really like how convenient it is that it is connected to [the university's authentication system] so I don't need to go through the hassle and make an account before using RadGrad.
+\item "The "What's New" section is really handy. This way if a new class or opportunity comes up then we'll be able to know."
 \item "The RadGrad interface is very satisfying. It is intuitive, leaving little room for guessing or confusion."
 \end{itemize}
 
@@ -511,7 +514,7 @@ However, there were a handful of negative comments regarding usability as well:
 
 \subsubsection{There are interactions between STAR and RadGrad.} The university's course registration system is called "STAR", which includes a degree planning mechanism. The essays revealed a spectrum of opinions regarding the interaction between RadGrad's degree planning environment and STAR's.  For example:
 \begin{itemize}[leftmargin=*]
-\item "It has very similar functionality like STAR except that it is more focus and oriented for ICS students. It has a lot of features I wish STAR had. So, its presence is needed and justified. But at the same time, I wish I didn’t need to log into a separate website to use its tools.... My only wish is that STAR would implement the same type of features that Radgrad has."
+\item "It has very similar functionality like STAR except that it is more focus and oriented for CS students. It has a lot of features I wish STAR had. So, its presence is needed and justified. But at the same time, I wish I didn’t need to log into a separate website to use its tools.... My only wish is that STAR would implement the same type of features that Radgrad has."
 \item "A planner that is 50000000x better than STAR is super awesome."
 \item "RadGrad is a convoluted version of STAR."
 \end{itemize}
@@ -593,10 +596,10 @@ That said, the questionnaire did yield a few interesting Faculty perspectives on
 
 \begin{itemize}[leftmargin=*]
 \item "RadGrad has a lot of benefits for students/faculty/advisors. To minimize the range of systems, I think it would work well as a component of (or integrated with) STAR. That would simplify the location to 1-stop shop for educational endeavors."
-\item "Many opportunity announcements have a short lifespan: people are looking for students to fill a position quickly, and one's it is filled it's done. So ordering opportunities by most recent seems best (like discord). "
+\item "Many opportunity announcements have a short lifespan: people are looking for students to fill a position quickly, and once it is filled it's done. So ordering opportunities by most recent seems best (like discord). "
 \item "The most pressing issue is faculty buy in.
 \item "Make the use of RadGrad part of the advising and also part of the administration of the undergraduate programs. It should be used by the undergraduate committee members."
-\item "I think we should adopt radgrad in ICS in a more general way. My only worry is the maintenance of it. We should discuss how to have maybe a student help position just to do the maintenance? Is that enough?"
+\item "I think we should adopt radgrad in CS in a more general way. My only worry is the maintenance of it. We should discuss how to have maybe a student help position just to do the maintenance? Is that enough?"
 \end{itemize}
 
 \subsection{Advisor Stakeholders}
@@ -691,7 +694,7 @@ Similarly, while the percentage of women in our program has increased slightly (
 
 Indeed, our belief is that there is no "silver bullet" regarding engagement, retention, and diversity in STEM disciplines. Initiatives like RadGrad have a positive role to play, but they are most likely to be effective as part of a larger commitment within the institution.
 
-\subsection{Implications for Future}
+\subsection{Implications for the Future}
 
 After five years of design and development, we believe the RadGrad software system has now matured to a point where it can be evaluated by other institutions. Indeed, this case study provides evidence that the RadGrad system is highly usable. One student went so far as to recommend that it be adopted by other academic institutions.
 
@@ -700,6 +703,8 @@ One significant outcome from trial adoption in other departments is to see if ou
 \section{Acknowledgements}
 
 (Omitted for the purposes of anonymous review.)
+
+\section{Appendices}
 
 \appendix
 
@@ -770,7 +775,7 @@ https://www.radgrad.org/docs/users/new-student/overview
 
 \begin{enumerate}[leftmargin=*]
 \item Do you recall ever reviewing the RadGrad New Faculty Tutorial? \newline (https://www.radgrad.org/docs/users/new-faculty/overview)
-\item Do you have any comments about the RadGrad New Advisor Tutorial?
+\item Do you have any comments about the RadGrad New Faculty Tutorial?
 \item Do you recall ever logging into the RadGrad instance for the ICS Department? \newline (https://radgrad2.ics.hawaii.edu/)
 \item Do you have any comments about your experience using the RadGrad instance for the ICS Department?
 \item Does the ICS instance of RadGrad contain any Opportunities associated with your research?
